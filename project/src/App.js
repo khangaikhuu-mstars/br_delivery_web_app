@@ -1,4 +1,3 @@
-import './css/infoPanel.css'
 import './App.css';
 import InfoPanel from './components/InfoPanel';
 
