@@ -3,12 +3,12 @@ import Button from './components/Button';
 
 function App() {
   return (
-     <div>
-       <Button class="nevtrehMobileView" type="НЭВТРЭХ"/>
-      <Button class="loginMobileView" type="ҮРГЭЛЖЛҮҮЛЭХ"/>
-      <Button class="loginMobileView" type="ХАДГАЛАХ"/>
-      <Button class="signupMobileView" type="БҮРТГҮҮЛЭХ"/>
-      <Button class="orderMobileView" type="САГСЛАХ"/>
+     <div className="button">
+       <Button class="nevtrehTabletView" type="НЭВТРЭХ"/>
+      <Button class="loginTabletView" type="ҮРГЭЛЖЛҮҮЛЭХ"/>
+      <Button class="loginTabletView" type="ХАДГАЛАХ"/>
+      <Button class="signupTabletView" type="БҮРТГҮҮЛЭХ"/>
+      <Button class="orderTabletView" type="САГСЛАХ"/>
      </div>
   );
 }
