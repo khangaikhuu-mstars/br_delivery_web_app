@@ -6,8 +6,10 @@ import Slider from "./components/Slider";
 
 function App() {
   return (
-    <Slider/>,
-    <InfoPanel/>
+    <div>
+      <Slider/>
+      <InfoPanel/>
+    </div>
   );
 
 }

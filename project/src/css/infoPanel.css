@@ -1,8 +1,5 @@
 @media (max-width: 456px){
-    body {
-        margin: 0;
-        font-family: 'Poppins', sans-serif;
-    }
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
     .backimg{
         background-image: url('../img/base.feature.png');
         background-position: center;
