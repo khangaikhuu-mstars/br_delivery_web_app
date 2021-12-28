@@ -1,8 +1,38 @@
-body {
-    font-family: 'Poppins', sans-serif;
-}
-.back{
-    background-image: url('../img/infoBack.png');
-    background-position:  center;
-    background-size: cover;
+@media (max-width: 456px){
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+    .backimg{
+        background-image: url('../img/base.feature.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+    .info-box{
+        display: flex;
+        flex-direction: row;
+        margin-left: 40px;
+        margin-top: 30px !important;
+    }
+    .info-box:last-child{
+        margin-bottom: 30px;
+    }
+    .info-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 15px;
+    }
+    .info-text h2{
+        font-size: 14px;
+        margin: 0;
+        font-weight: 700;
+    }
+    .info-text h3{
+        font-size: 12px;
+        margin: 0;
+        font-weight: 400;
+    }
 }
