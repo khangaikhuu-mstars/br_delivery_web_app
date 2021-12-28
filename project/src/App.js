@@ -1,18 +1,20 @@
 import React from "react";
 import "./App.css";
 import Slider from "./components/Slider";
-import TextField from "./components/TextField";
+import TextInput from "./components/TextInput";
 
 function App() {
   return(
     <div className="d-flex flex-column">
       <Slider />
       
-      <TextField name={'email'} />
-      <TextField name={'password'} />
-      <TextField name={'password'} />
-      <TextField name={'name'} />
-      <TextField name={'number'} />
+      <div className="inputContainer">
+        <TextInput name={'email'} />
+        <TextInput name={'password'} />
+        <TextInput name={'password'} />
+        <TextInput name={'name'} />
+        <TextInput name={'number'} />
+      </div>
 
     </div>
   ) 

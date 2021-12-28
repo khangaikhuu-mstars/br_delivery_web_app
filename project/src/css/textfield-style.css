@@ -1,24 +1,44 @@
+.inputContainer {
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
 
+}
 
 .form {
-    /* width: 80%; */
-    /* align-self: center; */
     padding: 0;
     margin: 0;
-    /* background-color: aliceblue; */
+    /* width: 80%; */
+    /* align-self: center; */
 
 }
 
 .input-label {
-    font-weight: 500;
+    /* font-size: 14px; */
+    margin-left: 40px;
+    font-weight: 400;
+    color: 171717;
 
 }
+
 .input-field {
-    border-radius: 15px;
-    border: 1px solid orange;
+    /* width: 335px; */
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #F17228;
+    border-right: none;
 
 }
 .input-field ::placeholder {
     opacity: 0.5;
+
+}
+
+.passToggle {
+    background: none;
+    border: 1px solid #F17228;
+    border-radius: 10px;
+    color: #F17228;
+    border-left: none;
 
 }
