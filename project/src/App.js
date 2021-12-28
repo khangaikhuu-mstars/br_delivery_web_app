@@ -8,8 +8,7 @@ function App() {
       <Button class="loginMobileView" type="ҮРГЭЛЖЛҮҮЛЭХ"/>
       <Button class="loginMobileView" type="ХАДГАЛАХ"/>
       <Button class="signupMobileView" type="БҮРТГҮҮЛЭХ"/>
-      <Button class="zahialahMobileView" type="ЗАХИАЛАХ"/>
-      <Button class="sagslahMobileView" type="САГСЛАХ"/>
+      <Button class="orderMobileView" type="САГСЛАХ"/>
      </div>
   );
 }

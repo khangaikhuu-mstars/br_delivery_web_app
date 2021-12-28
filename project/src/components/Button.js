@@ -1,9 +1,10 @@
 import React from "react";
+import { Button } from 'react-bootstrap';
 
 const Buttons = (props) => {
 
     return(
-            <button className={props.class}>{props.type}</button>
+            <Button className={props.class}>{props.type}</Button>
     )
 }
 
