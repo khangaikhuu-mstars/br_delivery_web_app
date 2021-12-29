@@ -60,11 +60,11 @@
       */
   }
   footer{
-    background-image: url(./icons/background\ image.png);
+    background-image: url(../icons/background_image.png);
     color: white;
     font-family: Poppins;
     font-style: normal;
-   
+    display: flex;
   }
   .face{
     font-weight: 600;
@@ -86,7 +86,7 @@
   font-size: 14px;
   line-height: 8px;
   }
-  
-    
-  
-  
+ footer .row{
+   margin-left: 0 !important;
+   margin-right: 0 !important;
+ }
