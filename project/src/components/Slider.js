@@ -4,6 +4,7 @@ import banner1 from "../img/banner-1.png";
 import banner2 from "../img/banner-2.png";
 import banner3 from "../img/banner-3.png";
 import banner11 from "../img/banner-11.png";
+import "../css/slider.css";
 
 const Slider = () => {
   return (
