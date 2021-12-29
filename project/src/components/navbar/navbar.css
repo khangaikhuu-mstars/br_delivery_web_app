@@ -1,0 +1,128 @@
+@media (min-width: 1440px) {
+  .headerMenu {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    height: 56px;
+    align-items: center;
+    background-color: #fefefe;
+    box-shadow: 0px 2px 4px rgba(241, 114, 40, 0.05);
+  }
+  .headerMenu a {
+    text-decoration: none;
+  }
+
+  .headerMenu .searchBox {
+    border: 1px solid #fbc5a6;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 235px;
+    height: 32px;
+  }
+  .headerMenu .logo .logoImg {
+    height: 40px;
+    width: 40px;
+  }
+  .headerMenu .logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .headerMenu .logo .logoText {
+    color: #f17228;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .headerMenu .menu {
+    display: flex;
+    list-style-type: none;
+    gap: 41px;
+    margin: 16px 0;
+    color: #000;
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 16px;
+  }
+  .headerMenu .menu .activeMenuItem {
+    color: #f17228;
+    font-weight: bold;
+  }
+  .headerMenu .userBusket {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 20px 0;
+  }
+  .headerMenu .userBusket .userBusketList .userBusketElement {
+    display: flex;
+    gap: 4px;
+  }
+  .headerMenu .userBusket .userBusketList .userBusketElement a {
+    color: #f17228;
+  }
+}
+@media (max-width: 1439px) {
+  .container .headerMenu {
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(241, 114, 40, 0.05);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto 0;
+    padding: 0;
+  }
+  .container .headerMenu .logo {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+  .container .headerMenu .logo .logoImg {
+    height: 30px;
+    width: 30px;
+  }
+  .container .header .searchIcon {
+    align-items: center;
+  }
+  .container .headerMenu .logo .logoText {
+    color: #f17228;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .container .headerMenu .menu {
+    display: flex;
+    gap: 23px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+  }
+  .container .headerMenu .menu li {
+    list-style: none;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: center;
+    color: #000;
+  }
+  .container .headerMenu .menu .activeMenuItem {
+    font-weight: 600;
+    color: #f17228;
+  }
+  .container .headerMenu .userBusket {
+    display: flex;
+    gap: 21.5px;
+    list-style-type: none;
+    align-items: center;
+    padding: 0 0;
+    margin: 0;
+  }
+  .container .headerMenu .userBusket .userBusketList .userBusketElement a {
+    display: none;
+  }
+  .container .headerMenu .userBusket .userBusketList .userBusketElement img {
+    height: 18px;
+    width: 21px;
+  }
+}
