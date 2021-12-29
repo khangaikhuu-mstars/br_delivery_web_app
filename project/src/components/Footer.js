@@ -36,12 +36,12 @@ const Footer = () => {
             </div>
           </div>
           <div className="row border-t">
-            <div className="row col-md-6 col-lg-6 my-3">
-              <div className="col-6 inactive-3 ">
+            <div className="row col-md-4 col-lg-4 my-3">
+              <div className="inactive-3 ">
                 <div className="row   flex-3">
                   <p className="inactive-1">Бидэнтэй нэгдээрэй</p>
                   <div className="">
-                    {" "}
+                    
                     <img className="m-2" src={facebookicon} alt="facebook" />
                     <img className="m-2" src={instagramIcon} alt="instagram" />
                     <img className="m-2" src={twitterIcon} alt="twitter" />{" "}
@@ -49,7 +49,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="row  col-md-6 col-lg-6 d-md-flex my-3 ">
+            <div className="row  col-md-8 col-lg-8 d-md-flex my-3 ">
               <div className="col-md-12 col-lg-6 text-md-end  ">
                 <div className=" row text-sm-start text-md-end d-md-flex  ">
                   <p className="nuuts order-md-2 px-2 col-md-6 ">
