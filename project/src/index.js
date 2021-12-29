@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './css/button.css'
+import './css/card.css'
 import App from './App';
 
 ReactDOM.render(
