@@ -1,11 +1,16 @@
 import React from 'react'
 import './navbar.css'
-import { Navbar } from 'react-bootstrap'
+import { } from 'react-bootstrap'
 const HeaderMenu = () => {
 
     return (
-        <header className="container " >
+        <header className="container">
             <div className="headerMenu">
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
                 <div className="logo">
                     <img className="logoImg" src='/images/img.png' />
                     <a className="logoText" href="#">Food Delivery</a>
@@ -19,6 +24,7 @@ const HeaderMenu = () => {
                 <div className="icons">
                     <input className="searchBox" type="text" placeholder="&#128269; Хайх" />
                     <img className="searchIcon" src="/icons/searchicon.svg" />
+                    <img className="mobileUser" src='/icons/mobileuser.svg' />
                     <ul className="userBusket">
                         <li className="userBusketList">
                             <div className="userBusketElement">

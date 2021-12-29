@@ -1,3 +1,17 @@
+.toggle-button {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  margin: auto 0;
+}
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #f17228;
+  border-radius: 10px;
+}
 @media (min-width: 1440px) {
   .headerMenu {
     display: flex;
@@ -45,7 +59,8 @@
     display: flex;
     align-items: center;
   }
-  .searchIcon {
+  .searchIcon,
+  .mobileUser {
     display: none;
   }
   .headerMenu .searchBox {
@@ -98,7 +113,8 @@
     font-size: 16px;
     line-height: 24px;
   }
-  .container .headerMenu .searchBox {
+  .container .headerMenu .searchBox,
+  .mobileUser {
     display: none;
   }
 
@@ -145,5 +161,48 @@
     height: 18px;
     width: 21px;
     margin: auto 0;
+  }
+}
+@media (max-width: 834px) {
+  .container .headerMenu .userBusket {
+    display: none;
+  }
+  .container .headerMenu .mobileUser {
+    display: block;
+    height: 18px;
+    width: 16px;
+    margin: auto 0;
+  }
+}
+@media (max-width: 767px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .container .headerMenu .menu {
+    display: none;
+    width: 100%;
+  }
+
+  .container .headerMenu .menu ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .container .headerMenu .menu ul li {
+    text-align: center;
+  }
+
+  .container .headerMenu .menu ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .container .headerMenu .menu .active {
+    display: flex;
   }
 }
