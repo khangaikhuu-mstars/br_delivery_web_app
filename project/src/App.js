@@ -1,13 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
 import Footer from './Footer';
-
+import Slider from "./components/Slider";
 function App() {
   return (
-   
-    <Footer/>
-   
+    <div>
+      <Slider />
+      <Footer />
+    </div>
   );
 }
-
 export default App;
