@@ -1,16 +1,18 @@
-import './css/button.css'
-import Button from './components/Button';
+import React from "react";
+import InfoPanel from './components/InfoPanel';
+import Footer from "./components/Footer";
+import Slider from "./components/Slider";
+import "./App.css";
 
 function App() {
   return (
-     <div className="button">
-       <Button class="nevtrehTabletView" type="НЭВТРЭХ"/>
-      <Button class="loginTabletView" type="ҮРГЭЛЖЛҮҮЛЭХ"/>
-      <Button class="loginTabletView" type="ХАДГАЛАХ"/>
-      <Button class="signupTabletView" type="БҮРТГҮҮЛЭХ"/>
-      <Button class="orderTabletView" type="САГСЛАХ"/>
-     </div>
+    <div>
+      <Slider/>
+      <InfoPanel/>
+      <Footer />
+    </div>
   );
+
 }
 
 export default App;
