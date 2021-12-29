@@ -1,9 +1,12 @@
-import React from "react";
-import "./App.css";
+import './App.css';
+import Footer from './components/Footer';
 import Slider from "./components/Slider";
-
 function App() {
-  return <Slider />;
+  return (
+    <div>
+      <Slider />
+      <Footer />
+    </div>
+  );
 }
-
 export default App;
