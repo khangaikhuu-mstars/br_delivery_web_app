@@ -1,10 +1,10 @@
 import React from "react";
-import foodDelivery from "./icons/foodDelivery.png"
-import facebookicon from './icons/facebook_logo.png'
-import instagramIcon from './icons/instagram_logo.png'
-import twitterIcon from './icons/twitter_logo.png'
+import foodDelivery from "../icons/foodDelivery.png"
+import facebookicon from '../icons/facebook_logo.png'
+import instagramIcon from '../icons/instagram_logo.png'
+import twitterIcon from '../icons/twitter_logo.png'
 
-import './App.css';
+import '../App.css';
 
 const Footer = () => {
 
@@ -12,7 +12,7 @@ const Footer = () => {
 
     return (
         <footer>
-            <div className="container row ">
+            <div className="container row mx-1 ">
                 <div className="col-sm-12 col-md-4 pt-4 ">
                     <img className="me-2 " src={foodDelivery} alt="" />
                     <span className="food">Food delivery</span>
@@ -55,8 +55,8 @@ const Footer = () => {
                     <div className="row  col-md-6 col-lg-6 d-md-flex my-3 ">
                         <div className="col-md-12 col-lg-6 text-md-end  ">
                             <div className=" row text-sm-start text-md-end d-md-flex  ">
-                                <p className="nuuts order-2 px-2 col-md-6 ">Нууцлалын бодлого</p>
-                                <p className="nuuts order-1 px-2 col-md-6 ">Үйлчилгээний нөхцөл</p>
+                                <p className="nuuts order-md-2 px-2 col-md-6 ">Нууцлалын бодлого</p>
+                                <p className="nuuts order-md-1 px-2 col-md-6 ">Үйлчилгээний нөхцөл</p>
                             </div>
                         </div>
                         <div className="text-end col-lg-6 my-2 pb-5">
