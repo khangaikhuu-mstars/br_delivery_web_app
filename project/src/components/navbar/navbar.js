@@ -1,43 +1,39 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './navbar.css'
+import { Navbar } from 'react-bootstrap'
 const HeaderMenu = () => {
-    const searchInput = <input className="searchBox" type="text" placeholder="&#128269; Хайх" />
-    const searcIcon = <img className="searchIcon" src="/icons/searchicon.svg" />
-    // const width = window.innerWidth;
-    // console.log(width)
-    // const isTable = width > 1440 ? searchInput : searcIcon
-
-    const [width, setWidth] = useState(
-        window.pageXOffset > 1440 ? searchInput : searcIcon
-    );
 
     return (
-        <header className="container">
-            <div className="headerMenu ">
+        <header className="container " >
+            <div className="headerMenu">
                 <div className="logo">
                     <img className="logoImg" src='/images/img.png' />
                     <a className="logoText" href="#">Food Delivery</a>
                 </div>
-                <ul className="menu">
+                <ul className="menu" id="basic-navbar-nav">
                     <li className="activeMenuItem">НҮҮР</li>
                     <li>ХООЛНЫ ЦЭС</li>
                     <li>ХҮРГЭЛТИЙН БҮС</li>
                 </ul>
-                <div>{width}</div>
-                <ul className="userBusket">
-                    <li className="userBusketList">
-                        <div className="userBusketElement">
-                            <img src='/icons/busketicon.svg' />
-                            <a href="">Сагс</a>
-                        </div>
-                    </li>
-                    <li className="userBusketList">
-                        <div className="userBusketElement">
-                            <img src="/icons/usericon.svg" />
-                            <a href="">Нэвтрэх</a>
-                        </div>
-                    </li>
-                </ul>
+
+                <div className="icons">
+                    <input className="searchBox" type="text" placeholder="&#128269; Хайх" />
+                    <img className="searchIcon" src="/icons/searchicon.svg" />
+                    <ul className="userBusket">
+                        <li className="userBusketList">
+                            <div className="userBusketElement">
+                                <img src='/icons/busketicon.svg' />
+                                <a href="">Сагс</a>
+                            </div>
+                        </li>
+                        <li className="userBusketList">
+                            <div className="userBusketElement">
+                                <img src="/icons/usericon.svg" />
+                                <a href="">Нэвтрэх</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </header>
     )
