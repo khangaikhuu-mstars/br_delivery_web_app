@@ -22,7 +22,7 @@ const Slider = () => {
                   <h2 className="slider-h2 text-orange">
                     MStars Food delivery
                   </h2>
-                  <span></span>
+                  <span className="underline"></span>
                   <p className="slider-p">
                     Хосгүй амтыг хормын дотор хүргэж өгнө.
                   </p>

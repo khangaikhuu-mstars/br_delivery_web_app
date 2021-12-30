@@ -22,10 +22,7 @@
   display: none !important;
 }
 
-.slider {
-}
-
-span {
+.underline {
   display: none;
   border-top: 2px solid #f17228;
   width: 100%;
@@ -106,8 +103,10 @@ span {
     width: 15px !important;
   }
 
-  span {
+  .underline {
     margin: 20px 0 20px 0;
+    margin-left: auto;
+    width: 80%;
     display: block;
   }
 }
@@ -139,7 +138,9 @@ span {
     height: 8px !important;
   }
 
-  span {
+  .underline {
     display: block;
+    width: 80%;
+    margin-left: auto;
   }
 }
