@@ -1,6 +1,5 @@
 import React from 'react'
-import './navbar.css'
-import { } from 'react-bootstrap'
+import '../css/navbar.css'
 const HeaderMenu = () => {
 
     return (

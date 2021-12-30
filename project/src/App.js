@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import HeaderMenu from "./components/navbar/navbar";
+import HeaderMenu from './components/navbar'
 import InfoPanel from "./components/InfoPanel";
 import Footer from "./components/Footer";
 import Slider from "./components/Slider";
@@ -10,8 +10,8 @@ function App() {
   return (
     <div>
       <HeaderMenu />
-      <Slider/>
-      <InfoPanel/>
+      <Slider />
+      <InfoPanel />
       <Footer />
     </div>
   );
