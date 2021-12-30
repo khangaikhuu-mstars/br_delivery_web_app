@@ -1,26 +1,17 @@
 import React from "react";
-import { Col, Container, Row } from 'react-bootstrap';
-import data from '../data/foods'
+import '../css/card.css'
 
-const Cards = () => {
-    let dataList = data.data.map((i) => {
-        return (
-            <div className="col">
-                <div className="cards">
-                    <img src={i.img} />
-                    <p>{i.name}</p>
-                    <span>{i.discountPrice} </span>
-                    <span>{i.price} </span>
-                </div>
+const Card = (props) => {
+    return (
+        <div className="card">
+            <img src={props.img} />
+            <p>{props.name}</p>
+            <div className="price">
+                <span id="span1">{props.discountPrice} </span>
+                <span id="span2">{props.price} </span>
             </div>
-        )
-    })
-        return(
-            <div className="container">
-                <div className="row-cols-sm-6 row-cols-md-3">                     
-                    {dataList}
-                </div>
-            </div>
-    )}
+        </div>
+    )
+}
 
-export default Cards;
+export default Card;

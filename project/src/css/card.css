@@ -1,22 +1,26 @@
-.cards {
+.card {
     background: #FFFFFF;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    width: 156px;
     margin: 10px;
-    padding: 20px;
+    padding: 10px;
 }
 
-.cards img {
-    margin: 10px;
+.card img {
+    width: 100%;
     border-radius: 7px;
 }
 
-.cards p {
+.card p {
     font-weight: bold;
 }
 
-.cards span {
+/* .price {
+    display: flex;
+    flex-direction: column-reverse;
+} */
+
+.price ::first-line {
     font-weight: bold;
     color: #F17228;
 }
