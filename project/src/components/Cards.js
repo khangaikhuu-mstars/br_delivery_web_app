@@ -1,29 +1,29 @@
 import React from "react";
 import data from '../data/foods'
 import Card from "./Card";
+import { Container, Row } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Cards = () => {
+class Cards extends React.Component {
 
-    return (
-        data.data.map((i) => {
-            return (
-                <div className="container">
-                    <div className="row">
-                        <div className="col-sm-6 col-md-3">
+    render() {
+        return (
+            <Container>
+                <Row className="cards">
+                    {data.data.map((i) => {
+                        return (
                             <Card
                                 img={i.img}
                                 name={i.name}
                                 discountPrice={i.discountPrice}
                                 price={i.price}
                             />
-                        </div>
-                    </div>
-                </div>
-            )
-
-        })
-    )
+                        )
+                    })}
+                </Row>
+            </Container>
+        )
+    }
 }
 
 export default Cards;
