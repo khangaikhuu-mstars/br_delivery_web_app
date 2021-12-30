@@ -6,9 +6,9 @@ import InfoPanel from './components/InfoPanel'
 function App() {
   return (
     <div>
-      {/* <Slider />
-      {/* <InfoPanel.js/> */
-      /* <Footer /> */ }
+      <Slider />
+      {/* <InfoPanel.js/>  */}
+      <Footer /> 
       <CategoryLabel title='Хямдралтай'/>
       <CategoryLabel title='Үндсэн хоол'/>
       <CategoryLabel title='Салат ба зууш'/>
