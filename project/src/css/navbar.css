@@ -1,3 +1,12 @@
+.container {
+  padding: 0;
+}
+.toggleButton {
+  display: none;
+}
+nav {
+  box-shadow: 0px 2px 4px rgba(241, 114, 40, 0.05);
+}
 @media (min-width: 1440px) {
   .headerMenu {
     display: flex;
@@ -6,7 +15,6 @@
     height: 56px;
     align-items: center;
     background-color: #fefefe;
-    box-shadow: 0px 2px 4px rgba(241, 114, 40, 0.05);
   }
   .headerMenu a {
     text-decoration: none;
@@ -73,7 +81,6 @@
 @media (max-width: 1439px) {
   .container .headerMenu {
     background-color: #fff;
-    box-shadow: 0px 2px 4px rgba(241, 114, 40, 0.05);
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -161,45 +168,74 @@
   }
 }
 @media (max-width: 767px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .toggle-button {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-    margin: auto 0;
-  }
-  .toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: #f17228;
-    border-radius: 10px;
-  }
-
   .container .headerMenu .menu {
     display: none;
     width: 100%;
   }
-
-  .container .headerMenu .menu ul {
-    width: 100%;
-    flex-direction: column;
+  .container .headerMenu {
+    align-items: center;
   }
-
-  .container .headerMenu .menu ul li {
-    text-align: center;
-  }
-
-  .container .headerMenu .menu ul li a {
-    padding: 0.5rem 1rem;
-  }
-
-  .container .headerMenu .menu .active {
+  .toggleButton {
     display: flex;
+    color: #f17228;
+  }
+  .mainDropMenu {
+    background-color: #fefefe;
+    padding: 20px;
+  }
+  .dropMenu {
+    padding: 20px;
+    background-color: #f0efef;
+  }
+  .dropMenuMinSection {
+    display: flex;
+    gap: 15px;
+  }
+  .dropMenuImg img {
+    width: 15px;
+    height: 15px;
+  }
+  .dropMenuText {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+  }
+  .dropMenuMinSection {
+    display: flex;
+    align-items: center;
+  }
+  .dropMenuImg {
+    display: flex;
+    width: 35px;
+    height: 35px;
+    background-color: #f2994a1a;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  .dropMenuContent {
+    display: flex;
+    justify-content: space-between;
+  }
+  .dropMenuSection {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+  }
+  #dropMenuBorder {
+    border-bottom: 1px #f17228 solid;
+  }
+  .dropMenuSection:first-child {
+    margin-bottom: 10px;
+  }
+  .dropMenuContent:first-child {
+    padding-bottom: 10px;
+  }
+  .dropMenuContent:last-child {
+    padding-top: 10px;
   }
 }
