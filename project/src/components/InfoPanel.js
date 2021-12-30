@@ -3,9 +3,7 @@ import "../css/infoPanel.css";
 
 const InfoPanel = () => {
     return (
-        <section>
-            <div>
-                <div className="backimg">
+            <div className='backimg'>
                     <div className='info-panel'>
                         <div className='info-box'>
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -38,9 +36,7 @@ const InfoPanel = () => {
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
-        </section>
     )
 }
 export default InfoPanel
