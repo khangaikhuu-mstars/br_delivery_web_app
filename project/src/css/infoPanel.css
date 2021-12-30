@@ -1,4 +1,39 @@
-@media (max-width: 375px) {
+@media (max-width: 456px){
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+    .backimg{
+        background-image: url('../img/base.feature.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+    .info-box{
+        display: flex;
+        flex-direction: row;
+        margin-left: 40px;
+        margin-top: 30px !important;
+    }
+    .info-box:last-child{
+        margin-bottom: 30px;
+    }
+    .info-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 15px;
+    }
+    .info-text h2{
+        font-size: 14px;
+        margin: 0;
+        font-weight: 700;
+    }
+    .info-text h3{
+        font-size: 12px;
+        margin: 0;
+        font-weight: 400;
+    }
+}
+@media (max-width: 739px) {
     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 
     .backimg {
@@ -8,12 +43,17 @@
         background-size: cover;
         width: 100%;
     }
+    .info-panel{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
 
     .info-box {
         display: flex;
         flex-direction: row;
-        margin-left: 40px;
-        margin-top: 30px !important;
+        margin-left: 20%;
+        margin-top: 2rem;
     }
 
     .info-box:last-child {
@@ -24,7 +64,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 15px;
+        margin-left: 1rem;
     }
 
     .info-text h2 {
@@ -40,15 +80,18 @@
     }
 }
 
-@media (min-width: 376px) and  (max-width: 835px) {
+@media (min-width: 740px) and  (max-width: 1023px) {
     .backimg {
-        position: absolute;
-        left: 0;
         width: 100%;
         background: hsla(22, 88%, 55%, 1);
         background: linear-gradient(270deg, hsla(22, 88%, 55%, 1) 0%, hsla(22, 88%, 55%, 0.2) 0%, hsla(60, 100%, 100%, 1) 29%, hsla(60, 100%, 100%, 1) 79%);
         background: -moz-linear-gradient(270deg, hsla(22, 88%, 55%, 1) 0%, hsla(22, 88%, 55%, 0.2) 0%, hsla(60, 100%, 100%, 1) 29%, hsla(60, 100%, 100%, 1) 79%);
         background: -webkit-linear-gradient(270deg, hsla(22, 88%, 55%, 1) 0%, hsla(22, 88%, 55%, 0.2) 0%, hsla(60, 100%, 100%, 1) 29%, hsla(60, 100%, 100%, 1) 79%);
+    }
+    .info-panel{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
     }
     .info-box {
         display: flex;
@@ -58,17 +101,17 @@
     }
 
     .info-panel:first-child {
-        margin-left: 72.5px;
+        margin-left: 5rem;
     }
     .info-panel:last-child{
-        margin-right: 72.5px;
+        margin-right: 3.5rem;
     }
 
     .info-text {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 15px;
+        margin-left: 1rem;
     }
 
     .info-text h2 {
@@ -82,10 +125,9 @@
         margin: 0;
         font-weight: 400;
     }
-}@media (min-width: 835px){
+}@media (min-width: 1024px){
     .backimg {
         position: absolute;
-        left: 0;
         width: 100%;
         background: hsla(22, 88%, 55%, 1);
         background: linear-gradient(270deg, hsla(22, 88%, 55%, 1) 0%, hsla(22, 88%, 55%, 0.2) 0%, hsla(60, 100%, 100%, 1) 29%, hsla(60, 100%, 100%, 1) 79%);
@@ -95,30 +137,39 @@
     .info-box {
         display: flex;
         flex-direction: row;
-        margin-top: 46px !important;
-        margin-bottom: 46px !important;
+        padding-top: 46px !important;
+        padding-bottom: 46px !important;
+    }
+    .info-box:first-child{
+        padding-left: 5rem;
+    }
+    .info-box:last-child{
+        padding-right: 3.5rem;
     }
 
     .info-panel{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         border: white solid;
         border-radius: 30px;
         background: rgba(255, 255, 255, 1);
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
-        margin: 48px !important;
+        margin: 3rem auto;
     }
 
     .info-panel:first-child {
-        margin-left: 215.5px;
+        margin-left: 4rem !important;
     }
     .info-panel:last-child{
-        margin-right: 215.5px;
+        margin-right: 4rem !important;
     }
 
     .info-text {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 15px;
+        margin-left: 1rem;
     }
 
     .info-text h2 {
