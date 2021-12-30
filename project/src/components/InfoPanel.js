@@ -1,7 +1,6 @@
 import React from 'react'
 import "../css/infoPanel.css";
 
-import { Container, Row, Col } from 'react-bootstrap'
 const InfoPanel = () => {
     return (
         <section>
