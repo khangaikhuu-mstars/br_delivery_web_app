@@ -1,18 +1,21 @@
 import { Form, InputGroup } from "react-bootstrap";
-import { Button } from "react-bootstrap";
-import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 
 
 const TextInput = (props) => {
+
+
+    
     // let value = props.value;
     let name = props.name;
     let type = props.type;
-
+    
     const show = <img type='button' src="../icons/show-pass.png"></img>;
     const hide = <img src="../icons/hide-pass.png"></img>;
-
-    const isPass = false;
-    const isTextfield = false;
+    
+    const isHidden = true;
+    const handleToggler = () => {
+       console.log('toggling')
+    }
 
     let defInput =
         <div className="input-container d-flex">
@@ -23,7 +26,7 @@ const TextInput = (props) => {
     if (type === 'password') defInput =
         <div className="input-container d-flex">
             <Form.Control className="input-field" type={type} placeholder="name@example.com" />
-            <span className="passToggle">
+            <span className="passToggle" onClick={() => handleToggler()}>
                 {show}
             </span>
         </div>

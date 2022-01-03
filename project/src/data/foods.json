@@ -1,0 +1,114 @@
+{
+    "data": [
+        {
+            "price": 6800,
+            "sales": "",
+            "img": "../img/macaron.png",
+            "name": "Макарон",
+            "discountPrice": "3,800₮",
+            "discountPercentage": "20%",
+            "stock": "",
+            "category": "амттан хямдралтай",
+            "portion": "1"
+        },
+        {
+            "price": "6800",
+            "sales": "",
+            "img": "../img/sandwich.png",
+            "name": "Банана сэндвич",
+            "discountPrice": "4,800₮",
+            "discountPercentage": "20%",
+            "stock": "",
+            "category": "амттан хямдралтай",
+            "portion": "1"
+        },
+        {
+            "price": "14,800₮",
+            "sales": "",
+            "img": "../img/meatball.png",
+            "name": "Бөөрөнхий мах",
+            "discountPrice": "",
+            "discountPercentage": "",
+            "stock": "",
+            "category": "үндсэн хоол",
+            "portion": "1"
+        },
+        {
+            "price": "11,800₮",
+            "sales": "",
+            "img": "../img/salmon.png",
+            "name": "Салмон загас",
+            "discountPrice": "",
+            "discountPercentage": "",
+            "stock": "",
+            "category": "үндсэн хоол",
+            "portion": "1"
+        },
+        {
+            "price": "6,800₮",
+            "sales": "",
+            "img": "../img/detox_salad.png",
+            "name": "Детокс салат",
+            "discountPrice": "",
+            "discountPercentage": "",
+            "stock": "",
+            "category": "салад ба зууш",
+            "portion": "1"
+        },
+        {
+            "price": "6,800₮",
+            "sales": "",
+            "img": "../img/cobb_salad.png",
+            "name": "Кобб салад",
+            "discountPrice": "",
+            "discountPercentage": "",
+            "stock": "",
+            "category": "салад ба зууш",
+            "portion": "2"
+        },
+        {
+            "price": "5,800₮",
+            "sales": "",
+            "img": "../img/donuts.png",
+            "name": "Донатс",
+            "discountPrice": "",
+            "discountPercentage": "",
+            "stock": "",
+            "category": "амттан",
+            "portion": "1"
+        },
+        {
+            "price": "7,800₮",
+            "sales": "",
+            "img": "../img/oreo_dessert.png",
+            "name": "Орео дессерт",
+            "discountPrice": "",
+            "discountPercentage": "",
+            "stock": "",
+            "category": "амттан",
+            "portion": "1"
+        },
+        {
+            "price": "6,800₮",
+            "sales": "",
+            "img": "../img/pumpkin_soup.png",
+            "name": "Хулууны зутан",
+            "discountPrice": "",
+            "discountPercentage": "",
+            "stock": "",
+            "category": "үндсэн хоол",
+            "portion": "1"
+        },
+        {
+            "price": "24,000₮",
+            "sales": "",
+            "img": "../img/italian_pizza.png",
+            "name": "Итали пицца",
+            "discountPrice": "",
+            "discountPercentage": "",
+            "stock": "",
+            "category": "үндсэн хоол",
+            "portion": "3"
+        }
+    ]
+}
