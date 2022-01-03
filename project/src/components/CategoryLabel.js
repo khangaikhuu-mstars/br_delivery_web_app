@@ -1,6 +1,6 @@
 import React from "react";
 import '../css/category.css'
-import title from 'react'
+
 const CategoryLabel = (props) => {
     return (
         <div className="container mt-4">
