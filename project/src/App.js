@@ -9,11 +9,12 @@ function App() {
       <Slider />
       
       <div className="inputContainer">
-        <TextInput name={'email'} type={''}/>
+        <TextInput name={'email'} type={'email'}/>
         <TextInput name={'password'} type={'password'}/>
-        <TextInput name={'password'} type={'password'}/>
-        <TextInput name={'name'} />
-        <TextInput name={'number'}/>
+        {/* <TextInput name={'password'} type={'password'}/>
+        <TextInput name={'name'} /> */}
+        <TextInput name={'number'} type={'number'}/>
+        <TextInput name={'textField'} type={'textField'}/>
       </div>
 
     </div>
