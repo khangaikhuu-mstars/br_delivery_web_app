@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import '../css/navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Switch } from 'react-router-dom'
 const HeaderMenu = () => {
     const [showMenu, setShowMenu] = useState(false)
     let menu;
@@ -13,7 +13,8 @@ const HeaderMenu = () => {
                     <div className="dropMenuMinSection">
                         <div className="dropMenuImg">
                             <img src="/icons/forkandknife.svg" alt="" />
-                        </div><NavLink className="dropMenuText" to="/menu">Хоолны цэс</NavLink>
+                        </div>
+                        <NavLink className="dropMenuText" to="/menu">Хоолны цэс</NavLink>
                     </div>
                     <img className="seeMore" src="/icons/seemore.svg" alt="#" />
                 </div>
@@ -49,6 +50,7 @@ const HeaderMenu = () => {
             </div>
         </div>
     }
+
     return (
         <nav>
             <header className="container">
@@ -68,9 +70,9 @@ const HeaderMenu = () => {
                     </div>
 
                     <ul className="menu" id="basic-navbar-nav">
-                        <li ><NavLink className="activeMenuItem menuText" to="/">НҮҮР</NavLink></li>
-                        <li ><NavLink className='menuText' to="/menu">ХООЛНЫ ЦЭС</NavLink></li>
-                        <li ><NavLink className='menuText' to="/delivery">ХҮРГЭЛТИЙН БҮС</NavLink></li>
+                        <li ><NavLink activeClassName='activeMenuItem' exact to="/">НҮҮР</NavLink></li>
+                        <li ><NavLink activeClassName='activeMenuItem' to="/menu">ХООЛНЫ ЦЭС</NavLink></li>
+                        <li ><NavLink activeClassName='activeMenuItem' to="/delivery">ХҮРГЭЛТИЙН БҮС</NavLink></li>
                     </ul>
                     <div className="icons">
                         <input className="searchBox" type="text" placeholder="&#128269; Хайх" />
@@ -94,7 +96,6 @@ const HeaderMenu = () => {
                 </div>
             </header>
             <div className='hidemenu'>
-
                 {menu}
             </div>
         </nav>
