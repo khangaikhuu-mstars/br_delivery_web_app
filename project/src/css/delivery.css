@@ -1,28 +1,18 @@
-.background {
-    background: #FFFFFF;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+
+.radius{
+    border-radius: 20px;
+}
+#sda{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);;
+}
+#sadSda{
+    width: 50px;
+    background-color: rgba(242, 153, 74, 0.1);
     border-radius: 10px;
 }
-
-.bottom {
-    position: relative;
-    align-items: center;
+#goySda{
     border-bottom: 1px solid #F2994A;
-   
 }
-
-.background10 {
-    
-    position: absolute;
-    width: 35px;
-    height: 35px;
-    left: 25px;
-    background: rgba(242, 153, 74, 0.1);
-    border-radius: 10px;
-}
-.bairlal{
-    
-    left: 15%;
-    position: absolute;
-   
+#goySda:last-child{
+    border: 0;
 }
