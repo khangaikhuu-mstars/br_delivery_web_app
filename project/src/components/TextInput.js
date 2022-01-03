@@ -7,7 +7,8 @@ const TextInput = (props) => {
     let name = props.name;
     let type = props.type;
 
-    const eye = <AiFillEye />;
+    // const eye = <AiFillEye />;
+    const eye = <img src="icons/show-pass.png"></img>;
     const closedEye = <AiFillEyeInvisible />;
 
     return (
@@ -16,7 +17,7 @@ const TextInput = (props) => {
             <InputGroup className="mb-2">
                 <Form.Control className="input-field" type={type} placeholder={`placeholder`} />
                 <Button className="passToggle">
-                    <i>{eye}</i>
+                    {eye}
                 </Button>
             </InputGroup>
         </Form.Group>
