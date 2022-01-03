@@ -13,7 +13,6 @@ function App() {
       <CategoryLabel title='Үндсэн хоол'/>
       <CategoryLabel title='Салат ба зууш'/>
       <CategoryLabel title='амттан'/>
-      
     </div>
   );
 }
