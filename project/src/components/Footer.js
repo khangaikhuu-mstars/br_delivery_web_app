@@ -3,9 +3,8 @@ import foodDelivery from "../icons/foodDelivery.png";
 import facebookicon from "../icons/facebook_logo.png";
 import instagramIcon from "../icons/instagram_logo.png";
 import twitterIcon from "../icons/twitter_logo.png";
-
+import { NavLink } from 'react-router-dom'
 import "../css/footer.css";
-
 const Footer = () => {
     return (
         <footer>
@@ -17,9 +16,15 @@ const Footer = () => {
                     </div>
                     <div className=" row col-md-8 my-3 col-md-text-decoration mb-5 ">
                         <div className="col-6 mt-3 ps-3  ">
-                            <p className="face">Нүүр</p>
-                            <p className="face">Хоолны цэс</p>
-                            <p className="face">Xүргэлтийн бүс</p>
+                            <NavLink className="faceItems" to="/">
+                                <p className="face">Нүүр</p>
+                            </NavLink>
+                            <NavLink className="faceItems" to="/menu">
+                                <p className="face">Хоолны цэс</p>
+                            </NavLink>
+                            <NavLink className="faceItems" to="/delivery">
+                                <p className="face">Xүргэлтийн бүс</p>
+                            </NavLink>
                         </div>
                         <div className="col-6 mt-3 ">
                             <p className="face">Холбоо барих</p>

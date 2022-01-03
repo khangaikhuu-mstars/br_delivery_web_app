@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import '../css/navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { NavLink } from 'react-router-dom'
 const HeaderMenu = () => {
     const [showMenu, setShowMenu] = useState(false)
     let menu;
@@ -12,17 +13,16 @@ const HeaderMenu = () => {
                     <div className="dropMenuMinSection">
                         <div className="dropMenuImg">
                             <img src="/icons/forkandknife.svg" alt="" />
-                        </div>
-                        <a className="dropMenuText" href="#">Хоолны цэс</a>
+                        </div><NavLink className="dropMenuText" to="/menu">Хоолны цэс</NavLink>
                     </div>
                     <img className="seeMore" src="/icons/seemore.svg" alt="#" />
                 </div>
                 <div className="dropMenuContent">
                     <div className="dropMenuMinSection">
                         <div className="dropMenuImg">
-                            <img src="/icons/forkandknife.svg" alt="" />
+                            <img src="/icons/map.svg" alt="" />
                         </div>
-                        <a className="dropMenuText" href="#">Хоолны цэс</a>
+                        <NavLink className="dropMenuText" to="/delivery">Хүргэлтийн бүс </NavLink>
                     </div>
                     <img className="seeMore" src="/icons/seemore.svg" alt="#" />
                 </div>
@@ -31,18 +31,18 @@ const HeaderMenu = () => {
                 <div className="dropMenuContent" id="dropMenuBorder">
                     <div className="dropMenuMinSection" >
                         <div className="dropMenuImg">
-                            <img src="/icons/forkandknife.svg" alt="" />
+                            <img src="/icons/rounduser.svg" alt="" />
                         </div>
-                        <a className="dropMenuText" href="#">Хоолны цэс</a>
+                        <a className="dropMenuText" >Хэрэглэгчийн мэдээлэл</a>
                     </div>
                     <img className="seeMore" src="/icons/seemore.svg" alt="#" />
                 </div>
                 <div className="dropMenuContent">
                     <div className="dropMenuMinSection">
                         <div className="dropMenuImg">
-                            <img src="/icons/forkandknife.svg" alt="" />
+                            <img src="/icons/market.svg" alt="" />
                         </div>
-                        <a className="dropMenuText" href="#">Хоолны цэс</a>
+                        <a className="dropMenuText" >Миний захиалга</a>
                     </div>
                     <img className="seeMore" src="/icons/seemore.svg" alt="#" />
                 </div>
@@ -58,20 +58,20 @@ const HeaderMenu = () => {
                         icon={faBars}
                         onClick={() => {
                             setShowMenu(!showMenu)
-                            console.log('changed')
                         }}
                     />
                     <div className="logo">
-                        <img className="logoImg" src='/images/img.png' />
-                        <a className="logoText" href="#">Food Delivery</a>
+                        <NavLink className="logoItems" exact to="/">
+                            <img className="logoImg" src='/images/img.png' />
+                            <a className="logoText" >Food Delivery</a>
+                        </NavLink>
                     </div>
 
                     <ul className="menu" id="basic-navbar-nav">
-                        <li className="activeMenuItem">НҮҮР</li>
-                        <li>ХООЛНЫ ЦЭС</li>
-                        <li>ХҮРГЭЛТИЙН БҮС</li>
+                        <li ><NavLink className="activeMenuItem menuText" to="/">НҮҮР</NavLink></li>
+                        <li ><NavLink className='menuText' to="/menu">ХООЛНЫ ЦЭС</NavLink></li>
+                        <li ><NavLink className='menuText' to="/delivery">ХҮРГЭЛТИЙН БҮС</NavLink></li>
                     </ul>
-
                     <div className="icons">
                         <input className="searchBox" type="text" placeholder="&#128269; Хайх" />
                         <img className="searchIcon" src="/icons/searchicon.svg" />
