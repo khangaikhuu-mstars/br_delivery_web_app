@@ -1,62 +1,62 @@
 {
     "data": [
         {
-            "price": "6,800₮",
+            "price": 6800,
             "sales": true,
             "img": "../img/breakfast.png",
             "name": "Өглөөний хоол",
-            "discountPrice": "5,440₮",
-            "discountPercentage": "20%",
+            "discountPrice": "",
+            "discountPercentage": 20,
             "stock": "",
             "category": "үндсэн хоол хямдралтай",
             "portion": "1"
         },
         {
-            "price": "6,800₮",
+            "price": 6800,
             "sales": true,
             "img": "../img/icecream.png",
             "name": "Зайрмаг",
-            "discountPrice": "4,760₮",
-            "discountPercentage": "30%",
+            "discountPrice": "",
+            "discountPercentage": 30,
             "stock": "",
             "category": "амттан хямдралтай",
             "portion": "1"
         },
         {
-            "price": "6,800₮",
+            "price": 6800,
             "sales": true,
             "img": "../img/pancake.png",
             "name": "Панкейк",
-            "discountPrice": "5,600₮",
-            "discountPercentage": "20%",
+            "discountPrice": "",
+            "discountPercentage": 20,
             "stock": "",
             "category": "амттан хямдралтай",
             "portion": "1"
         },
         {
-            "price": "6,800₮",
+            "price": 6800,
             "sales": true,
             "img": "../img/macaron.png",
             "name": "Макарон",
-            "discountPrice": "3,800₮",
-            "discountPercentage": "20%",
+            "discountPrice": "",
+            "discountPercentage": 20,
             "stock": "",
             "category": "амттан хямдралтай",
             "portion": "1"
         },
         {
-            "price": "6,800₮",
+            "price": 6800,
             "sales": true,
             "img": "../img/banana_sandwich.png",
             "name": "Банана сэндвич",
-            "discountPrice": "4,640₮",
-            "discountPercentage": "20%",
+            "discountPrice": "",
+            "discountPercentage":20,
             "stock": false,
             "category": "амттан хямдралтай",
             "portion": "1"
         },
         {
-            "price": "14,800₮",
+            "price": 14800,
             "sales": false,
             "img": "../img/meatball.png",
             "name": "Бөөрөнхий мах",
@@ -67,7 +67,7 @@
             "portion": "1"
         },
         {
-            "price": "11,800₮",
+            "price": 11800,
             "sales": false,
             "img": "../img/salmon.png",
             "name": "Салмон загас",
@@ -78,7 +78,7 @@
             "portion": "1"
         },
         {
-            "price": "6,800₮",
+            "price": 6800,
             "sales": false,
             "img": "../img/detox_salad.png",
             "name": "Детокс салат",
@@ -89,7 +89,7 @@
             "portion": "1"
         },
         {
-            "price": "6,800₮",
+            "price": 6800,
             "sales": false,
             "img": "../img/cobb_salad.png",
             "name": "Кобб салад",
@@ -100,7 +100,7 @@
             "portion": "2"
         },
         {
-            "price": "5,800₮",
+            "price": 5800,
             "sales": false,
             "img": "../img/donuts.png",
             "name": "Донатс",
@@ -111,7 +111,7 @@
             "portion": "1"
         },
         {
-            "price": "7,800₮",
+            "price": 7800,
             "sales": false,
             "img": "../img/oreo_dessert.png",
             "name": "Орео дессерт",
@@ -122,7 +122,7 @@
             "portion": "1"
         },
         {
-            "price": "6,800₮",
+            "price": 6800,
             "sales": false,
             "img": "../img/pumpkin_soup.png",
             "name": "Хулууны зутан",
@@ -133,7 +133,7 @@
             "portion": "1"
         },
         {
-            "price": "24,000₮",
+            "price": 24000,
             "sales": false,
             "img": "../img/italian_pizza.png",
             "name": "Итали пицца",

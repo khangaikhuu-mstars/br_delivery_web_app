@@ -7,11 +7,11 @@ const Card = (props) => {
     let cards = props.sales ? (
         <div className="card">
             <img src={props.img} />
-            <div className="badge">{props.percent}</div>
+            <div className="badge">{props.percent}%</div>
             <p>{props.name}</p>
             <div className="price">
-                <p className="activePrice">{props.discountPrice} </p>
-                <strike className="strike-dark">{props.price} </strike>
+                <p className="activePrice">{new Intl.NumberFormat().format(props.price-props.price * props.percent / 100)}₮ </p>
+                <strike className="strike-dark">{new Intl.NumberFormat().format(props.price)}₮ </strike>
             </div>
         </div>
     ) : (
@@ -19,14 +19,14 @@ const Card = (props) => {
             <img src={props.img} />
             <p>{props.name}</p>
             <div className="price">
-                <p className="activePrice">{props.price} </p>
+                <p className="activePrice">{new Intl.NumberFormat().format(props.price)}₮ </p>
             </div>
         </div>
     )
 
 
     return (
-        <Col xs={6} md={3}>
+        <Col xs={6} md={3} className="mb-4">
             {cards}
         </Col>
     )

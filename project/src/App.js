@@ -8,10 +8,8 @@ import Search from "./components/Search";
 import User from "./components/User";
 import Market from "./components/Market";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import InfoPanel from './components/InfoPanel';
 import Footer from "./components/Footer";
-import Slider from "./components/Slider";
-import Cards from "./components/Cards"
+
 function App() {
   return (
     <BrowserRouter>
