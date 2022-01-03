@@ -19,7 +19,7 @@
 
 .input-label {
     /* font-size: 14px; */
-    margin-left: 40px;
+    margin-left: 20px;
     font-weight: 400;
     color: 171717;
 
@@ -30,6 +30,7 @@
     height: 40px;
     border-radius: 10px;
     border: 1px solid #F17228;
+    padding: 10px 20px;
     /* border-right: none; */
 
 }
@@ -53,5 +54,7 @@
     position: absolute;
     left: 295px;
     bottom: 10px;
+    border: none;
+    display: block;
 
 }

@@ -4,7 +4,8 @@ import HeaderMenu from './navbar'
 import InfoPanel from "./InfoPanel";
 import Footer from "./Footer";
 import Slider from "./Slider";
-import "../../src/App.css"
+import "../../src/App.css" 
+import TextInput from "./TextInput";
 
 function Home() {
     return (
@@ -19,7 +20,7 @@ function Home() {
                     <TextInput name={'email'} type={'email'} />
                     <TextInput name={'password'} type={'password'} />
                     {/* <TextInput name={'password'} type={'password'}/>
-        <TextInput name={'name'} /> */}
+                        <TextInput name={'name'} /> */}
                     <TextInput name={'number'} type={'number'} />
                     <TextInput name={'textField'} type={'textField'} />
                 </div>
