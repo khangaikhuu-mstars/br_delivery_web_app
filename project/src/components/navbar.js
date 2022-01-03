@@ -93,7 +93,10 @@ const HeaderMenu = () => {
                     </div>
                 </div>
             </header>
-            {menu}
+            <div className='hidemenu'>
+
+                {menu}
+            </div>
         </nav>
     )
 }

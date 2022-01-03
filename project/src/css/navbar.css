@@ -18,6 +18,9 @@ nav {
   align-items: center;
 }
 @media (min-width: 1440px) {
+  .hidemenu {
+    display: none;
+  }
   .headerMenu {
     display: flex;
     justify-content: space-between;
