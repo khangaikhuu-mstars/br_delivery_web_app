@@ -1,8 +1,41 @@
 {
     "data": [
         {
-            "price": 6800,
-            "sales": "",
+            "price": "6,800₮",
+            "sales": true,
+            "img": "../img/breakfast.png",
+            "name": "Өглөөний хоол",
+            "discountPrice": "5,440₮",
+            "discountPercentage": "20%",
+            "stock": "",
+            "category": "үндсэн хоол хямдралтай",
+            "portion": "1"
+        },
+        {
+            "price": "6,800₮",
+            "sales": true,
+            "img": "../img/icecream.png",
+            "name": "Зайрмаг",
+            "discountPrice": "4,760₮",
+            "discountPercentage": "30%",
+            "stock": "",
+            "category": "амттан хямдралтай",
+            "portion": "1"
+        },
+        {
+            "price": "6,800₮",
+            "sales": true,
+            "img": "../img/pancake.png",
+            "name": "Панкейк",
+            "discountPrice": "5,600₮",
+            "discountPercentage": "20%",
+            "stock": "",
+            "category": "амттан хямдралтай",
+            "portion": "1"
+        },
+        {
+            "price": "6,800₮",
+            "sales": true,
             "img": "../img/macaron.png",
             "name": "Макарон",
             "discountPrice": "3,800₮",
@@ -12,19 +45,19 @@
             "portion": "1"
         },
         {
-            "price": "6800",
-            "sales": "",
-            "img": "../img/sandwich.png",
+            "price": "6,800₮",
+            "sales": true,
+            "img": "../img/banana_sandwich.png",
             "name": "Банана сэндвич",
-            "discountPrice": "4,800₮",
+            "discountPrice": "4,640₮",
             "discountPercentage": "20%",
-            "stock": "",
+            "stock": false,
             "category": "амттан хямдралтай",
             "portion": "1"
         },
         {
             "price": "14,800₮",
-            "sales": "",
+            "sales": false,
             "img": "../img/meatball.png",
             "name": "Бөөрөнхий мах",
             "discountPrice": "",
@@ -35,7 +68,7 @@
         },
         {
             "price": "11,800₮",
-            "sales": "",
+            "sales": false,
             "img": "../img/salmon.png",
             "name": "Салмон загас",
             "discountPrice": "",
@@ -46,7 +79,7 @@
         },
         {
             "price": "6,800₮",
-            "sales": "",
+            "sales": false,
             "img": "../img/detox_salad.png",
             "name": "Детокс салат",
             "discountPrice": "",
@@ -57,7 +90,7 @@
         },
         {
             "price": "6,800₮",
-            "sales": "",
+            "sales": false,
             "img": "../img/cobb_salad.png",
             "name": "Кобб салад",
             "discountPrice": "",
@@ -68,7 +101,7 @@
         },
         {
             "price": "5,800₮",
-            "sales": "",
+            "sales": false,
             "img": "../img/donuts.png",
             "name": "Донатс",
             "discountPrice": "",
@@ -79,7 +112,7 @@
         },
         {
             "price": "7,800₮",
-            "sales": "",
+            "sales": false,
             "img": "../img/oreo_dessert.png",
             "name": "Орео дессерт",
             "discountPrice": "",
@@ -90,7 +123,7 @@
         },
         {
             "price": "6,800₮",
-            "sales": "",
+            "sales": false,
             "img": "../img/pumpkin_soup.png",
             "name": "Хулууны зутан",
             "discountPrice": "",
@@ -101,7 +134,7 @@
         },
         {
             "price": "24,000₮",
-            "sales": "",
+            "sales": false,
             "img": "../img/italian_pizza.png",
             "name": "Итали пицца",
             "discountPrice": "",

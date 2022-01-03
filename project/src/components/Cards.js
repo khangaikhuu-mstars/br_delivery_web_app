@@ -17,6 +17,8 @@ class Cards extends React.Component {
                                 name={i.name}
                                 discountPrice={i.discountPrice}
                                 price={i.price}
+                                sales={i.sales}
+                                percent={i.discountPercentage}
                             />
                         )
                     })}
