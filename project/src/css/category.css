@@ -7,7 +7,9 @@
         font-family: Poppins;
         font-style: normal;
         font-weight: bold;
-        font-size: 14px
+        font-size: 14px;
+        padding-left: 25px;
+    
     }
 
     .container .arrow {

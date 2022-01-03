@@ -3,7 +3,7 @@ import '../css/category.css'
 
 const CategoryLabel = (props) => {
     return (
-        <div className="container mt-4">
+        <div className="container">
             <div className="row border-b ">
                 <p className="col-6 hmm fw-bold ">{props.title}</p>
                 <button className="col-2 ondor py-2 px-3 arrow">
