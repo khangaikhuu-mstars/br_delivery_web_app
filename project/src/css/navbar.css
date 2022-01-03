@@ -7,6 +7,16 @@
 nav {
   box-shadow: 0px 2px 4px rgba(241, 114, 40, 0.05);
 }
+.headerMenu .menu .menuText {
+  color: #000;
+}
+.headerMenu a {
+  text-decoration: none;
+}
+.headerMenu .logo .logoItems {
+  display: flex;
+  align-items: center;
+}
 @media (min-width: 1440px) {
   .headerMenu {
     display: flex;
@@ -15,9 +25,6 @@ nav {
     height: 56px;
     align-items: center;
     background-color: #fefefe;
-  }
-  .headerMenu a {
-    text-decoration: none;
   }
 
   .headerMenu .logo .logoImg {
@@ -29,6 +36,7 @@ nav {
     gap: 10px;
     align-items: center;
   }
+
   .headerMenu .logo .logoText {
     color: #f17228;
     font-weight: 700;
@@ -40,10 +48,15 @@ nav {
     list-style-type: none;
     gap: 41px;
     margin: 16px 0;
-    color: #000;
     font-weight: 500;
     line-height: 24px;
     font-size: 16px;
+  }
+  .headerMenu .logo .logoItems {
+    gap: 4px;
+  }
+  .headerMenu .menu .menuText {
+    color: #000;
   }
   .headerMenu .menu .activeMenuItem {
     color: #f17228;
