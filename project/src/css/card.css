@@ -1,0 +1,21 @@
+.card {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px !important; 
+    padding: 10px;
+    height: 100%;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.card p {
+    font-weight: bold;
+}
+
+.activePrice {
+    font-weight: bold;
+    color: #F17228;
+}
