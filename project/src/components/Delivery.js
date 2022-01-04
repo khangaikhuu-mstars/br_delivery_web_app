@@ -1,4 +1,5 @@
 import React from "react";
+import Privacy from "./PrivacyPolicy";
 // import "./App.css";
 
 
@@ -7,6 +8,7 @@ function Delivery() {
         <div>
 
             it is delivery
+            <Privacy />
         </div>
     );
 
