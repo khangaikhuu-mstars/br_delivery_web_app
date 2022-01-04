@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import HeaderMenu from './components/navbar'
-import "./App.css";
 import Home from "./components/Home";
 import Menu from "./components/Menu";
 import Delivery from "./components/Delivery";
@@ -11,6 +10,7 @@ import Market from "./components/Market";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Footer from "./components/Footer";
 import TermOfUse from "./components/TermOfUse";
+
 function App() {
   return (
     <BrowserRouter>
