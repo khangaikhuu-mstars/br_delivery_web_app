@@ -28,11 +28,12 @@
   border: 1px solid #f17228;
 }
 
-.button:hover {
+/* .button:hover {
   color: #f17228;
-}
+} */
 
-.button-active {
+.button:hover,
+.active-menu-button {
   background-color: #f17228;
   color: #ffffff;
   border: none;

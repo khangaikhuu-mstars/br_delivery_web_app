@@ -11,6 +11,7 @@ import Market from "./components/Market";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Footer from "./components/Footer";
 import PageInsideMenu from "./components/PageInsideMenu";
+import Dummy from "./components/Dummy";
 function App() {
   return (
     <BrowserRouter>
