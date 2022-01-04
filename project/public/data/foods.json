@@ -1,5 +1,4 @@
-{
-    "data": [
+ [
         {
             "price": 6800,
             "sales": true,
@@ -35,13 +34,13 @@
         },
         {
             "price": 6800,
-            "sales": true,
+            "sales": false,
             "img": "../img/macaron.png",
             "name": "Макарон",
             "discountPrice": "",
             "discountPercentage": 20,
             "stock": "",
-            "category": "амттан хямдралтай",
+            "category": "амттан",
             "portion": "1"
         },
         {
@@ -100,6 +99,28 @@
             "portion": "2"
         },
         {
+            "price": 6800,
+            "sales": false,
+            "img": "../img/avocado_salad.png",
+            "name": "Авокадо салад",
+            "discountPrice": "",
+            "discountPercentage": "",
+            "stock": "",
+            "category": "салад ба зууш",
+            "portion": "2"
+        },
+        {
+            "price": 4800,
+            "sales": false,
+            "img": "../img/sandwich.png",
+            "name": "Сендвич",
+            "discountPrice": "",
+            "discountPercentage": "",
+            "stock": "",
+            "category": "салад ба зууш",
+            "portion": "2"
+        },
+        {
             "price": 5800,
             "sales": false,
             "img": "../img/donuts.png",
@@ -115,6 +136,17 @@
             "sales": false,
             "img": "../img/oreo_dessert.png",
             "name": "Орео дессерт",
+            "discountPrice": "",
+            "discountPercentage": "",
+            "stock": "",
+            "category": "амттан",
+            "portion": "1"
+        },
+        {
+            "price": 5800,
+            "sales": false,
+            "img": "../img/waffle.png",
+            "name": "Вафли",
             "discountPrice": "",
             "discountPercentage": "",
             "stock": "",
@@ -144,4 +176,3 @@
             "portion": "3"
         }
     ]
-}

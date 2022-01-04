@@ -6,7 +6,7 @@ const Card = (props) => {
 
     let cards = props.sales ? (
         <div className="card">
-            <img src={props.img} />
+            <img src={props.img} alt=""/>
             <div className="badge">{props.percent}%</div>
             <p>{props.name}</p>
             <div className="price">
@@ -23,7 +23,6 @@ const Card = (props) => {
             </div>
         </div>
     )
-
 
     return (
         <Col xs={6} md={3} className="mb-4">
