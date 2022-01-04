@@ -1,0 +1,41 @@
+@media screen and (min-width: 250px) {
+    .p-none {
+        display: none;
+
+    }
+
+    .fonts {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        }
+
+    .p-margin{
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .p-none {
+        display: block;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .fonts {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .fonts {
+        font-size: 18px;
+    }
+    .p-none{
+        font-size: 18px;
+    }
+}

@@ -10,6 +10,7 @@ import User from "./components/User";
 import Market from "./components/Market";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Footer from "./components/Footer";
+import TermOfUse from "./components/TermOfUse";
 function App() {
   return (
     <BrowserRouter>
@@ -22,6 +23,7 @@ function App() {
         <Route path="/user" component={User} />
         <Route path="/market" component={Market} />
       </Switch>
+      <TermOfUse/>
       <Footer />
     </BrowserRouter>
   );
