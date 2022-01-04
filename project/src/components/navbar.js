@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import '../css/navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Switch } from 'react-router-dom'
 const HeaderMenu = () => {
     const [showMenu, setShowMenu] = useState(false)
     let menu;
@@ -13,12 +13,12 @@ const HeaderMenu = () => {
                     <div className="dropMenuMinSection">
                         <div className="dropMenuImg">
                             <img src="/icons/forkandknife.svg" alt="" />
-                        </div><NavLink className="dropMenuText" onClick={() => {
+                        </div > <NavLink className="dropMenuText" onClick={() => {
                             setShowMenu(!showMenu)
                         }} to="/menu">Хоолны цэс</NavLink>
-                    </div>
+                    </div >
                     <img className="seeMore" src="/icons/seemore.svg" alt="#" />
-                </div>
+                </div >
                 <div className="dropMenuContent">
                     <div className="dropMenuMinSection">
                         <div className="dropMenuImg">
@@ -30,7 +30,7 @@ const HeaderMenu = () => {
                     </div>
                     <img className="seeMore" src="/icons/seemore.svg" alt="#" />
                 </div>
-            </div>
+            </div >
             <div className="dropMenuSection">
                 <div className="dropMenuContent" id="dropMenuBorder">
                     <div className="dropMenuMinSection" >
@@ -51,8 +51,9 @@ const HeaderMenu = () => {
                     <img className="seeMore" src="/icons/seemore.svg" alt="#" />
                 </div>
             </div>
-        </div>
+        </div >
     }
+
     return (
         <nav>
             <header className="container">
