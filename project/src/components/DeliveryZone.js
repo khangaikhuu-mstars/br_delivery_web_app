@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
 import '../css/delivery.css';
+import {GoogleMap, withScriptjs, withGoogleMap} from 'react-google-maps';
 
 const DeliveryZone = () => {
     const [house, setData] = useState([])
@@ -18,6 +19,18 @@ const DeliveryZone = () => {
     }, [])
     let sliced8 = house.slice(0, 8)
     let sliced5 = house.slice(0, 5)
+    
+    function Map(){
+        return (
+            <GoogleMap
+            defaultZoom={10}
+            defaultCenter={{lat:47.9232639051122 , lng:106.9340403906498 ,}}
+            />
+        )
+    }
+    const WrappedMap = withScriptjs(withGoogleMap(Map));
+
+    
 
 
     return (
@@ -34,11 +47,8 @@ const DeliveryZone = () => {
                                 </svg>
                             </div>
                             <div id="text-sda">{data.house}</div>
-
-                        </div>
-
-
-                    )
+                            </div>
+                            )
                 })}
             </div>
             <h3 className='my-3'>"Б" бүс</h3>
@@ -60,6 +70,8 @@ const DeliveryZone = () => {
                 })}
             </div>
             <div id="map">
+                <WrappedMap
+                GoogleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places`}/>
             
             </div>
         </div>
