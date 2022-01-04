@@ -18,6 +18,9 @@ nav {
   align-items: center;
 }
 @media (min-width: 1440px) {
+  .dropMenu {
+    display: none;
+  }
   .headerMenu {
     display: flex;
     justify-content: space-between;
@@ -168,11 +171,15 @@ nav {
     width: 21px;
     margin: auto 0;
   }
+  .dropMenu {
+    display: none;
+  }
 }
 @media (max-width: 834px) {
   .container .headerMenu .userBusket {
     display: none;
   }
+
   .container .headerMenu .mobileUser {
     display: block;
     height: 18px;
@@ -199,6 +206,12 @@ nav {
   .dropMenu {
     padding: 20px;
     background-color: #f0efef;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
   }
   .dropMenuMinSection {
     display: flex;
@@ -250,5 +263,8 @@ nav {
   }
   .dropMenuContent:last-child {
     padding-top: 10px;
+  }
+  .dropMenuText:hover {
+    color: #f17228;
   }
 }

@@ -13,7 +13,9 @@ const HeaderMenu = () => {
                     <div className="dropMenuMinSection">
                         <div className="dropMenuImg">
                             <img src="/icons/forkandknife.svg" alt="" />
-                        </div><NavLink className="dropMenuText" to="/menu">Хоолны цэс</NavLink>
+                        </div><NavLink className="dropMenuText" onClick={() => {
+                            setShowMenu(!showMenu)
+                        }} to="/menu">Хоолны цэс</NavLink>
                     </div>
                     <img className="seeMore" src="/icons/seemore.svg" alt="#" />
                 </div>
@@ -22,7 +24,9 @@ const HeaderMenu = () => {
                         <div className="dropMenuImg">
                             <img src="/icons/map.svg" alt="" />
                         </div>
-                        <NavLink className="dropMenuText" to="/delivery">Хүргэлтийн бүс </NavLink>
+                        <NavLink className="dropMenuText" onClick={() => {
+                            setShowMenu(!showMenu)
+                        }} to="/delivery">Хүргэлтийн бүс </NavLink>
                     </div>
                     <img className="seeMore" src="/icons/seemore.svg" alt="#" />
                 </div>
@@ -61,16 +65,20 @@ const HeaderMenu = () => {
                         }}
                     />
                     <div className="logo">
-                        <NavLink className="logoItems" exact to="/">
+                        <NavLink className="logoItems" onClick={() => {
+                            setShowMenu(false)
+
+                        }} exact to="/">
                             <img className="logoImg" src='/images/img.png' />
                             <a className="logoText" >Food Delivery</a>
                         </NavLink>
                     </div>
 
                     <ul className="menu" id="basic-navbar-nav">
-                        <li ><NavLink className="activeMenuItem menuText" to="/">НҮҮР</NavLink></li>
-                        <li ><NavLink className='menuText' to="/menu">ХООЛНЫ ЦЭС</NavLink></li>
-                        <li ><NavLink className='menuText' to="/delivery">ХҮРГЭЛТИЙН БҮС</NavLink></li>
+                        <li ><NavLink className="menuText"
+                            activeClassName='activeMenuItem' exact to="/">НҮҮР</NavLink></li>
+                        <li ><NavLink className='menuText' activeClassName='activeMenuItem' to="/menu">ХООЛНЫ ЦЭС</NavLink></li>
+                        <li ><NavLink className='menuText' activeClassName='activeMenuItem' to="/delivery">ХҮРГЭЛТИЙН БҮС</NavLink></li>
                     </ul>
                     <div className="icons">
                         <input className="searchBox" type="text" placeholder="&#128269; Хайх" />
@@ -94,7 +102,7 @@ const HeaderMenu = () => {
                 </div>
             </header>
             {menu}
-        </nav>
+        </nav >
     )
 }
 export default HeaderMenu;
