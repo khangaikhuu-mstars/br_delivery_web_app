@@ -1,16 +1,16 @@
 import React from "react";
 // import "./App.css";
-import HeaderMenu from './navbar'
 import InfoPanel from "./InfoPanel";
-import Footer from "./Footer";
 import Slider from "./Slider";
 import "../../src/App.css"
+import Cards from "./Cards"
 
 function Home() {
     return (
         <div>
             <Slider />
             <InfoPanel />
+            <Cards/>
         </div>
     );
 
