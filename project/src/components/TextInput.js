@@ -1,5 +1,5 @@
 import { Form, InputGroup } from "react-bootstrap";
-import "../css/textfield-style.css";
+import "../css/textfield.css";
 import hide from "../icons/hide-pass.png";
 import show from "../icons/show-pass.png";
 import { useState, useEffect } from "react";
@@ -14,7 +14,6 @@ const TextInput = (props) => {
   const toggleHide = <img type="button" src={hide}></img>;
 
   // const isHidden = true;
-  let currentToggle = toggleHide;
 
   const [isHidden, setToggle] = useState(true);
   const [current, setCurrent] = useState(toggleShow);
@@ -73,7 +72,6 @@ const TextInput = (props) => {
 
 TextInput.defaultProps = {
   type: "text",
-  // name: ''
 };
 
 export default TextInput;
