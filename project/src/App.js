@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import HeaderMenu from './components/navbar'
-import "./App.css";
 import Home from "./components/Home";
 import Menu from "./components/Menu";
 import Delivery from "./components/Delivery";
