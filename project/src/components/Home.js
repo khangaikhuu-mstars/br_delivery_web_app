@@ -3,14 +3,14 @@ import React from "react";
 import InfoPanel from "./InfoPanel";
 import Slider from "./Slider";
 import "../../src/App.css"
-import Cards from "./Cards"
+import CategoryLabel from "./CategoryLabel";
 
 function Home() {
     return (
         <div>
             <Slider />
             <InfoPanel />
-            <Cards/>
+            <CategoryLabel/>
         </div>
     );
 
