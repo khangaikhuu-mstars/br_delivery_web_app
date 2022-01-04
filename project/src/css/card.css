@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@media (max-width: 739px){
+    .card {
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px !important; 
+        padding: 10px;
+        height: 100%;
+    }
+    
+    .card img {
+        width: 100%;
+        border-radius: 7px;
+    }
+    
+    .card p {
+        font-weight: 600;
+        margin: 0;
+        font-size: 12px;
+        line-height: 18px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .strike-dark{
+        font-weight: 400;
+        color: #171717;
+        font-size: 14px;
+        line-height: 21px !important;
+        padding-left: 10px;
+    }
+    
+    .activePrice {
+        font-weight: bold;
+        color: #F17228;
+        font-size: 14px !important;
+        line-height: 21px !important;
+        margin-top: 0 !important;
+    }
+    
+    .price{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .badge{
+        background-color: #F17228;
+        border-radius: 0px 7px 0px 20px !important;
+        position: absolute;
+        width: 50px;
+        height: 27px;
+        top: 10px;
+        right: 10px;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px !important;
+    }
+}
+@media (min-width: 740px) and  (max-width: 1023px){
+    .card {
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px !important; 
+        padding: 10px;
+        height: 100%;
+    }
+    
+    .card img {
+        width: 100%;
+        border-radius: 7px;
+    }
+    
+    .card p {
+        font-weight: 600;
+        margin: 0;
+        font-size: 12px;
+        line-height: 18px;
+        margin-left: 10px;
+        margin-top: 4px;
+    }
+    .strike-dark{
+        font-weight: 400;
+        color: #171717;
+        font-size: 14px;
+        line-height: 21px !important;
+        padding-left: 15px;
+    }
+    
+    .activePrice {
+        font-weight: bold;
+        color: #F17228;
+        font-size: 14px !important;
+        line-height: 21px !important;
+        margin-top: 0 !important;
+    }
+    
+    .price{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .badge{
+        background-color: #F17228;
+        border-radius: 0px 6px 0px 10px !important;
+        position: absolute;
+        width: 46px;
+        height: 26px;
+        top: 10px;
+        right: 10px;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px !important;
+        font-weight: 600 !important;
+        padding: 0 !important;
+    }
+}
+@media (min-width: 1024px){
+    .card {
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px !important; 
+        padding: 10px;
+        height: 100%;
+    }
+    
+    .card img {
+        width: 100%;
+        border-radius: 7px;
+    }
+    
+    .card p {
+        font-weight: 600;
+        margin: 0;
+        font-size: 16px;
+        line-height: 24px;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+    .strike-dark{
+        font-weight: 400;
+        color: #171717;
+        font-size: 18px;
+        line-height: 27px !important;
+        padding-left: 15px;
+    }
+    
+    .activePrice {
+        font-weight: bold;
+        color: #F17228;
+        font-size: 18px !important;
+        line-height: 27px !important;
+        margin-top: 0 !important;
+    }
+    
+    .price{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .badge{
+        background-color: #F17228;
+        border-radius: 0px 8px 0px 20px !important;
+        position: absolute;
+        width: 75px;
+        height: 43px;
+        top: 10px;
+        right: 10px;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px !important;
+        line-height: 27px;
+        font-weight: 600 !important;
+        padding: 0 !important;
+    }
+}
