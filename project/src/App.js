@@ -23,11 +23,10 @@ function App() {
         <Route path="/user" component={User} />
         <Route path="/market" component={Market} />
       </Switch>
-      <TermOfUse/>
+      {/* <TermOfUse/> */}
       <Footer />
     </BrowserRouter>
   );
-
 }
 
 export default App;
