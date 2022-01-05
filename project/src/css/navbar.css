@@ -7,7 +7,7 @@
 nav {
   box-shadow: 0px 2px 4px rgba(241, 114, 40, 0.05);
 }
-.headerMenu .menu .menuText {
+.headerMenu .menu li a {
   color: #000;
 }
 .headerMenu a {
@@ -18,6 +18,9 @@ nav {
   align-items: center;
 }
 @media (min-width: 1440px) {
+  .hidemenu {
+    display: none;
+  }
   .headerMenu {
     display: flex;
     justify-content: space-between;
@@ -55,12 +58,16 @@ nav {
   .headerMenu .logo .logoItems {
     gap: 4px;
   }
-  .headerMenu .menu .menuText {
+  .headerMenu .menu li a {
     color: #000;
   }
   .headerMenu .menu .activeMenuItem {
     color: #f17228;
     font-weight: bold;
+  }
+  .headerMenu .menu .notActiveMenuItem {
+    color: #000;
+    font-weight: 500;
   }
   .icons {
     display: flex;
@@ -167,6 +174,11 @@ nav {
     height: 18px;
     width: 21px;
     margin: auto 0;
+  }
+}
+@media (min-width: 767px) {
+  .hidemenu {
+    display: none;
   }
 }
 @media (max-width: 834px) {
