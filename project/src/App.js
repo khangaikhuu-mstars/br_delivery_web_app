@@ -11,6 +11,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Footer from "./components/Footer";
 import NotFound from "./components/NotFound";
 import PageInsideMenu from "./components/PageInsideMenu";
+
 function App() {
   return (
     <BrowserRouter>
@@ -22,8 +23,11 @@ function App() {
         <Route path="/search" component={Search} />
         <Route path="/user" component={User} />
         <Route path="/market" component={Market} />
-        <Route path="/pageInsideMenu" component={PageInsideMenu} />
+
         <Route component={NotFound}/>
+
+        <Route path="/pageInsideMenu" component={PageInsideMenu} />
+
       </Switch>
       <Footer />
     </BrowserRouter>

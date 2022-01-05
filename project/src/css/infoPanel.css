@@ -63,8 +63,15 @@
         flex-direction: row;
         margin-top: 50px !important;
         margin-bottom: 50px;
+<<<<<<< HEAD
 
     }   
+=======
+     }   
+
+}
+
+>>>>>>> c29aae6492afd794e6253cfde3f8729042ba7da3
 
     .info-text {
         display: flex;
