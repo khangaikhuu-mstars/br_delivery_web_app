@@ -16,7 +16,7 @@
 }
 
 .button {
-  min-width: 120px;
+  min-width: 150px;
   text-align: center;
   margin-right: 10px;
   padding: 10px;
@@ -37,4 +37,16 @@
   background-color: #f17228;
   color: #ffffff;
   border: none;
+}
+
+@media screen and (min-width: 740px) {
+  .button {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .button {
+    margin-bottom: 20px;
+  }
 }
