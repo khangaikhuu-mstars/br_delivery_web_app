@@ -1,0 +1,11 @@
+.modal-dialog {
+  max-width: 996px;
+  max-height: 572px;
+}
+.my-modal {
+  padding: 48.5px 43px;
+}
+.modalImage {
+  width: 443px;
+  height: 475px;
+}

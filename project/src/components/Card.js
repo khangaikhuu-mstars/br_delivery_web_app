@@ -1,19 +1,13 @@
 import React, { useState } from "react";
 import { Col, Modal } from "react-bootstrap";
 import '../css/card.css'
-
+import TestModal from './ExampleModal'
 
 const Card = (props) => {
-    let modal;
-    const [show, setShow] = useState(false);
-    if (show) {
-        console.log("true")
-    } else {
-        console.log("false")
-    }
+    const [showModal, setShowModal] = useState(false)
     let cards = props.sales ? (
         <div className="card"
-            onClick={() => { setShow(true) }}>
+        >
             <img src={props.img} alt="" />
             <div className="badge">{props.percent}%</div>
             <p>{props.name}</p>
@@ -24,7 +18,7 @@ const Card = (props) => {
         </div>
     ) : (
         <div className="card"
-            onClick={() => { setShow(true) }}>
+        >
             <img src={props.img} />
             <p>{props.name}</p>
             <div className="price">
@@ -34,9 +28,18 @@ const Card = (props) => {
     )
 
     return (
-        <Col xs={6} md={3} className="mb-4">
-            {cards}
-        </Col >
+        <>
+
+            <Col xs={6} md={3} className="mb-4" >
+                <div onClick={() => setShowModal(true)}
+                    className="singleCard">
+                    {cards}
+                </div>
+            </Col >
+
+
+            {showModal && <TestModal data={props} showHandler={setShowModal} />}
+        </>
     )
 }
 

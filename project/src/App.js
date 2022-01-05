@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ModalContext } from "react";
 import "./App.css";
 import HeaderMenu from "./components/navbar";
 import "./App.css";

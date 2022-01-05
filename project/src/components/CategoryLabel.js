@@ -5,7 +5,7 @@ import Sales from "./Sales";
 import Salad from "./Salad";
 import Desserts from "./Desserts"
 
-const CategoryLabel = (props) => {
+const CategoryLabel = () => {
     return (
         <div className="container my-5 pb-5">
             <div className="row border-b m-auto my-4">
@@ -13,7 +13,7 @@ const CategoryLabel = (props) => {
                 <button className="col-2 ondor py-2 px-3 arrow">
                     <span className="inactive-10">Бүгдийг харах</span>
                     <span className="orgon">&#62;</span> </button>
-                    
+
             </div>
             <Sales />
             <div className="row border-b m-auto my-4 ">
@@ -21,25 +21,25 @@ const CategoryLabel = (props) => {
                 <button className="col-2 ondor py-2 px-3 arrow">
                     <span className="inactive-10">Бүгдийг харах</span>
                     <span className="orgon">&#62;</span> </button>
-                    
+
             </div>
-            <MainDishMenu/>
+            <MainDishMenu />
             <div className="row border-b m-auto my-4">
                 <p className="col-6 hmm fw-bold ms-2">Салад ба зууш</p>
                 <button className="col-2 ondor py-2 px-3 arrow">
                     <span className="inactive-10">Бүгдийг харах</span>
                     <span className="orgon">&#62;</span> </button>
-                   
+
             </div>
-            <Salad/>
+            <Salad />
             <div className="row border-b m-auto my-4">
                 <p className="col-6 hmm fw-bold ms-2 ">Амттан</p>
                 <button className="col-2 ondor py-2 px-3 arrow">
                     <span className="inactive-10">Бүгдийг харах</span>
                     <span className="orgon">&#62;</span> </button>
-                   
+
             </div>
-            <Desserts/>
+            <Desserts />
         </div>
     )
 }
