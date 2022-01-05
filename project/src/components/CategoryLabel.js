@@ -7,36 +7,39 @@ import Desserts from "./Desserts"
 
 const CategoryLabel = (props) => {
     return (
-        <div className="container mt-4">
-            <div className="row border-b ">
-                <p className="col-6 hmm fw-bold ">Хямдралтай</p>
+        <div className="container my-5 pb-5">
+            <div className="row border-b m-auto my-4">
+                <p className="col-6 hmm fw-bold ms-2  ">Хямдралтай</p>
                 <button className="col-2 ondor py-2 px-3 arrow">
                     <span className="inactive-10">Бүгдийг харах</span>
                     <span className="orgon">&#62;</span> </button>
-                    <Sales/>
+                    
             </div>
-            <div className="row border-b ">
-                <p className="col-6 hmm fw-bold ">Үндсэн хоол</p>
+            <Sales />
+            <div className="row border-b m-auto my-4 ">
+                <p className="col-6 hmm fw-bold ms-2 ">Үндсэн хоол</p>
                 <button className="col-2 ondor py-2 px-3 arrow">
                     <span className="inactive-10">Бүгдийг харах</span>
                     <span className="orgon">&#62;</span> </button>
-                    <MainDishMenu/>
+                    
             </div>
-            <div className="row border-b ">
-                <p className="col-6 hmm fw-bold ">Салад ба зууш</p>
+            <MainDishMenu/>
+            <div className="row border-b m-auto my-4">
+                <p className="col-6 hmm fw-bold ms-2">Салад ба зууш</p>
                 <button className="col-2 ondor py-2 px-3 arrow">
                     <span className="inactive-10">Бүгдийг харах</span>
                     <span className="orgon">&#62;</span> </button>
-                    <Salad/>
+                   
             </div>
-            <div className="row border-b ">
-                <p className="col-6 hmm fw-bold ">Амттан</p>
+            <Salad/>
+            <div className="row border-b m-auto my-4">
+                <p className="col-6 hmm fw-bold ms-2 ">Амттан</p>
                 <button className="col-2 ondor py-2 px-3 arrow">
                     <span className="inactive-10">Бүгдийг харах</span>
                     <span className="orgon">&#62;</span> </button>
-                    <Desserts/>
+                   
             </div>
-
+            <Desserts/>
         </div>
     )
 }
