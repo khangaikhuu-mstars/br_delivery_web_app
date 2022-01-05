@@ -1,8 +1,10 @@
 @media screen and (min-width: 250px) {
     .p-none {
-        display: none;
-
-    }
+        border-left:5px solid #F17228 ;
+        
+        
+       }
+       
 
     .fonts {
         font-style: normal;
@@ -12,16 +14,20 @@
 
     .p-margin{
         margin: 0;
+        justify-content: space-between;
+        text-align: justify;
     }
 }
 
 @media screen and (min-width: 768px) {
     .p-none {
-        display: block;
+       
         font-style: normal;
         font-weight: bold;
         font-size: 16px;
         line-height: 24px;
+        border-left:11px solid #F17228 ;
+        height: 30px;
     }
 
     .fonts {
@@ -29,7 +35,7 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 998) {
     .fonts {
         font-size: 18px;
     }
