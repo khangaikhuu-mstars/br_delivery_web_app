@@ -6,7 +6,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function Cards() {
 
-   {
+
+  {
     return (
       <Container>
         <Row className="cards">

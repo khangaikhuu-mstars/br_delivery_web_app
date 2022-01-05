@@ -54,10 +54,12 @@ const Footer = () => {
                         </div>
                         <div className="row  col-md-8 col-lg-8 d-md-flex my-3 ">
                             <div className="col-md-12 col-lg-6 text-md-end  ">
-                                <div className=" row text-sm-start text-md-end d-md-flex  ">
+                                <div className="row text-sm-start text-md-end d-md-flex  ">
+
                                     <p className="nuuts order-md-2 px-2 col-md-6 ">
                                         Нууцлалын бодлого
                                     </p>
+
                                     <p className="nuuts order-md-1 px-2 col-md-6 ">
                                         Үйлчилгээний нөхцөл
                                     </p>
