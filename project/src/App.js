@@ -9,7 +9,8 @@ import User from "./components/User";
 import Market from "./components/Market";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Footer from "./components/Footer";
-import TermOfUse from "./components/TermOfUse";
+import NotFound from "./components/NotFound";
+import PageInsideMenu from "./components/PageInsideMenu";
 
 function App() {
   return (
@@ -22,6 +23,11 @@ function App() {
         <Route path="/search" component={Search} />
         <Route path="/user" component={User} />
         <Route path="/market" component={Market} />
+
+        <Route component={NotFound}/>
+
+        <Route path="/pageInsideMenu" component={PageInsideMenu} />
+
       </Switch>
       {/* <TermOfUse/> */}
       <Footer />
