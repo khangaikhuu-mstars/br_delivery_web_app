@@ -1,16 +1,17 @@
 import React, { ModalContext } from "react";
 import "./App.css";
-import HeaderMenu from "./components/navbar";
-import "./App.css";
+import HeaderMenu from './components/navbar'
 import Home from "./components/Home";
 import Menu from "./components/Menu";
 import Delivery from "./components/Delivery";
 import Search from "./components/Search";
 import User from "./components/User";
 import Market from "./components/Market";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Footer from "./components/Footer";
+import NotFound from "./components/NotFound";
 import PageInsideMenu from "./components/PageInsideMenu";
+
 function App() {
   return (
     <BrowserRouter>
@@ -22,11 +23,16 @@ function App() {
         <Route path="/search" component={Search} />
         <Route path="/user" component={User} />
         <Route path="/market" component={Market} />
+
+        <Route component={NotFound}/>
+
         <Route path="/pageInsideMenu" component={PageInsideMenu} />
+
       </Switch>
       <Footer />
     </BrowserRouter>
   );
+
 }
 
 export default App;
