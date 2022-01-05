@@ -5,7 +5,7 @@ const InfoPanel = () => {
     return (
             <div className='backimg'>
                 <div>
-                    <div className='info-panel'>
+                    <div className='info-panel container'>
                         <div className='info-box'>
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="40" height="40" rx="10" fill="#FFD7BF" fillOpacity="0.28" />
