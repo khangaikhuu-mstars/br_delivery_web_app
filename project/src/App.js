@@ -12,6 +12,7 @@ import Footer from "./components/Footer";
 import NotFound from "./components/NotFound";
 import PageInsideMenu from "./components/PageInsideMenu";
 import TermOfUse from "./components/TermOfUse"
+import Privacy from './components/Privacy'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/user" component={User} />
         <Route path="/market" component={Market} />
         <Route path="/termofuse" component={TermOfUse}/>
+        <Route path="/privacy" component={Privacy}/>
         <Route component={NotFound}/>
 
         <Route path="/pageInsideMenu" component={PageInsideMenu} />
