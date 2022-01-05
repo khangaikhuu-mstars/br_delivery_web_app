@@ -11,6 +11,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Footer from "./components/Footer";
 import NotFound from "./components/NotFound";
 import PageInsideMenu from "./components/PageInsideMenu";
+import TermOfUse from "./components/TermOfUse"
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
         <Route path="/search" component={Search} />
         <Route path="/user" component={User} />
         <Route path="/market" component={Market} />
-
+        <Route path="/termofuse" component={TermOfUse}/>
         <Route component={NotFound}/>
 
         <Route path="/pageInsideMenu" component={PageInsideMenu} />
@@ -31,6 +32,8 @@ function App() {
       </Switch>
       {/* <TermOfUse/> */}
       <Footer />
+     
+
     </BrowserRouter>
   );
 }

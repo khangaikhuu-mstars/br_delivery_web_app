@@ -58,9 +58,12 @@ const Footer = () => {
                                     <p className="nuuts order-md-2 px-2 col-md-6 ">
                                         Нууцлалын бодлого
                                     </p>
-                                    <p className="nuuts order-md-1 px-2 col-md-6 ">
+                                    <NavLink className="faceItems nuuts order-md-1 px-2 col-md-6 " to="/termofuse">
+                                    <p className=" text-white">
                                         Үйлчилгээний нөхцөл
                                     </p>
+                                    </NavLink>
+                                   
                                 </div>
                             </div>
                             <div className="text-end col-lg-6 my-2 pb-5">
