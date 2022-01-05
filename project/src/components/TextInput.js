@@ -4,6 +4,8 @@ import hide from "../icons/hide-pass.png";
 import show from "../icons/show-pass.png";
 import { useState, useEffect } from "react";
 
+// type={password, email, textField, '' -> auto text input}
+
 const TextInput = (props) => {
   // let value = props.value;
 
