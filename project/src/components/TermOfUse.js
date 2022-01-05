@@ -4,7 +4,7 @@ import "../css/termofuse.css"
 function TermOfUse() {
     return (
         <div>
-            <div className="container">
+            <div className="container mt-5">
                 <p className="p-none">Үйлчилгээний нөхцөл</p>
                 <div className="fonts">
                     <p className="p-margin" >  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mstars Food delivery нь Mstars Lab компанийн интернэт худалдааны албан ёсны вэбсайт бөгөөд энэхүү нөхцөл, журам нь уг вэбсайтаар үйлчлүүлэх, худалдан авалт хийхтэй холбоотой үүсэх харилцааг зохицуулахад оршино.</p>
@@ -17,7 +17,7 @@ function TermOfUse() {
                     <p className="p-margin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Энэхүү үйлчилгээний нөхцлийн хэрэгжилтэнд  MStars Lab / цаашид байгууллага гэх / болон хэрэглэгч / цаашид хэрэглэгч гэх / хамтран хяналт тавина.</p>
                 </div>
             </div>
-            <div className="container d-none d-md-block">
+            <div className="container mb-5 d-none d-md-block">
                 <div className="fonts">
                     <p className="p-margin" >  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mstars Food delivery нь Mstars Lab компанийн интернэт худалдааны албан ёсны вэбсайт бөгөөд энэхүү нөхцөл, журам нь уг вэбсайтаар үйлчлүүлэх, худалдан авалт хийхтэй холбоотой үүсэх харилцааг зохицуулахад оршино.</p>
                     <p className="p-margin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Энэхүү нөхцөл нь хэрэглэгч худалдан авалт хийх, вэбсайтаар үйлчлүүлэхээсээ өмнө хүлээн зөвшөөрч баталгаажуулсаны үндсэн дээр хэрэгжинэ.</p>
