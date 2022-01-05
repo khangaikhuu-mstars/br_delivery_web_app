@@ -23,9 +23,9 @@ const Delivery = () => {
     return (
         <div className='d-flex flex-column'>
             <div className='container order-1 row mx-auto '>
-                <p className='mobileOff borderLeft px-3 my-2 py-1 me-4 fw-bold'>Хүргэлтийн бүс дэх хаягууд</p>
+                <p className='mobileOff borderLeft px-3 my-2 py-1 me-4 ms-2 fw-bold'>Хүргэлтийн бүс дэх хаягууд</p>
                 <div id='delivery-1' className='bg-white d-block d-md-none radius py-2 my-3 px-4'>
-                    <h3 className='my-3 borderLeft px-3'>"А" бүс</h3>
+                    <h3 className='my-3 borderLeft px-3 '>"А" бүс</h3>
                     {sliced5.map(data => {
                         return (
                             <div className='d-flex align-items-center colororange' id='flex-dir'>
@@ -39,11 +39,11 @@ const Delivery = () => {
                         )
                     })}
                 </div>
-                <div className='col-lg-6 p-0'>
+                <div className='col-lg-6 '>
                     <div id='delivery-1' className='  bg-white d-none d-md-block radius  py-3 my-3 px-1'>
                         <div className="row align-items-center">
                             <div className="col-4">
-                                <p className='my-3 borderLeft px-3'>"А" бүс</p>
+                                <p className='my-3 borderLeft ms-4 px-3 px-lg-2 px-xl-3'>"А" бүс</p>
                             </div>
                             <div className="col-8">
                                 <div className="row ">
@@ -96,12 +96,12 @@ const Delivery = () => {
                         )
                     })}
                 </div>
-                <div className="col-lg-6 pe-0">
-                    <div id='delivery-1' className='bg-white d-none d-md-block radius py-3 my-3 px-1'>
+                <div className="col-lg-6">
+                    <div id='delivery-1' className='bg-white d-none d-md-block radius py-3 my-3 px-1 '>
 
                         <div className="row align-items-center">
                             <div className="col-4">
-                                <p className='my-3 borderLeft px-3'>"Б" бүс</p>
+                                <p className='my-3 borderLeft ms-4 px-3 px-lg-2 px-xl-3'>"Б" бүс</p>
                             </div>
                             <div className="col-8">
                                 <div className="row ">
