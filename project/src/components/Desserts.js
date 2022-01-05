@@ -1,9 +1,11 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import Card from "./Card";
+import { Container, Row } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-function Desserts(){
-    const [foods, setFoods] = useState([]);
+function Desserts() {
+  const [foods, setFoods] = useState([]);
 
   useEffect(() => {
     fetch("../data/foods.json")
@@ -16,23 +18,22 @@ function Desserts(){
   let desserts = foods.filter((p) => p.category === "амттан").slice(0, 4);
 
   return (
-    <div className="row">
-      {desserts.map((i) => {
-        return (
-         
-              <Card
-                img={i.img}
-                name={i.name}
-                discountPrice={i.discountPrice}
-                price={i.price}
-                sales={i.sales}
-                percent={i.discountPercentage}
-              />
-        
-          
-        );
-      })}
-    </div>
+    <Container>
+      <div className="row">
+        {desserts.map((i) => {
+          return (
+            <Card
+              img={i.img}
+              name={i.name}
+              discountPrice={i.discountPrice}
+              price={i.price}
+              sales={i.sales}
+              percent={i.discountPercentage}
+            />
+          );
+        })}
+      </div>
+    </Container>
   );
 }
-export default Desserts
+export default Desserts;
