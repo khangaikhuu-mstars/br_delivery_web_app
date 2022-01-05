@@ -63,14 +63,7 @@
         flex-direction: row;
         margin-top: 50px !important;
         margin-bottom: 50px;
-    }
-
-    .info-panel:first-child {
-        margin-left: 5rem;
-    }
-    .info-panel:last-child{
-        margin-right: 3.5rem;
-    }
+    }   
 
     .info-text {
         display: flex;
@@ -120,13 +113,6 @@
         border-radius: 30px;
         background: rgba(255, 255, 255, 1);
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
-    }
-
-    .info-panel:first-child {
-        margin-left: 4rem !important;
-    }
-    .info-panel:last-child{
-        margin-right: 4rem !important;
     }
 
     .info-text {
