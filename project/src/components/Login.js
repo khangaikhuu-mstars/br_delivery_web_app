@@ -15,7 +15,9 @@ const Login = () => {
                 type={'password'}
                 name={'password'}    
             />
-            <Buttons />
+            <Buttons 
+                className={'loginTabletView'}
+            />
         </div>
     )
 
