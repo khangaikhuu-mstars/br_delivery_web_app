@@ -15,6 +15,7 @@ const Login = () => {
                 type={'password'}
                 name={'password'}    
             />
+                <p></p>
             <Buttons 
                 class={'loginTabletView'}
                 type={'Login'}
