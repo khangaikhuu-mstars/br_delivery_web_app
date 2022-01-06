@@ -1,4 +1,9 @@
-.nevtrehTabletView, .loginTabletView, .signupTabletView, .orderTabletView, .urgeljluulehTabletView {
+
+
+/* position absolute arilgsan  */
+
+
+.nevtrehTabletView, .loginTabletView, .signupTabletView, .orderTabletView, .urgeljluulehTabletView{
     /* position: absolute; */
     /* width: 90%; */
     max-width: 340px;
@@ -24,7 +29,7 @@
 
 .signupTabletView {
     top: 40%;
-    color: #F17228;
+    /* color: #F17228; */
     background: #FFFFFF;
 }
 

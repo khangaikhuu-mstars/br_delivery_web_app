@@ -29,7 +29,7 @@ const TextInput = (props) => {
 
   let defInput = (
     <div className="input-container d-flex">
-      <Form.Control className="input-field" type={type} placeholder="Example" />
+      <Form.Control className="input-field" type={type} placeholder={'И-мэйл хаягаа оруулна уу.'} />
     </div>
   );
   if (type === "password")
