@@ -9,6 +9,7 @@ function TestModal(props) {
     }
     console.log(props.data)
     const handleShow = () => setShow(true);
+    let price = props.data.sales ? <div className='d-flex'><div className="modalPrice">{new Intl.NumberFormat().format(props.data.price - props.data.price * props.data.percent / 100)}₮ </div><strike className="strike-dark">{new Intl.NumberFormat().format(props.data.price)}₮ </strike> </div> : <div className='modalPrice'>{props.data.price}</div>
     return (
         <>
             <Modal dialogClassName="modal-dialog" show={show} onHide={handleClose} centered>
@@ -19,7 +20,7 @@ function TestModal(props) {
                         <div className='modalContent row '>
                             <div className='NameAndPrice'>
                                 <div className='modalHeader'>{props.data.name}</div>
-                                <div className='modalPrice'>{props.data.price}</div>
+                                {price}
                             </div>
                             <div>
                                 <h5 className='modalHeader'>Орц</h5>

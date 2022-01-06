@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import Card from "../components/Card";
 import { Container, Row } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../css/cardHover.css"
 
 function Sales() {
   const [sale, setSale] = useState([]);
