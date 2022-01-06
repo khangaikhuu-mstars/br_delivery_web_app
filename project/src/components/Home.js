@@ -4,6 +4,7 @@ import InfoPanel from "./InfoPanel";
 import Slider from "./Slider";
 import "../../src/App.css"
 import CategoryLabel from "./CategoryLabel";
+import ForgetPassword from "./ForgetPassword"
 
 function Home() {
     return (
@@ -11,6 +12,7 @@ function Home() {
             <Slider />
             <InfoPanel />
             <CategoryLabel/>
+            <ForgetPassword/>
         </div>
     );
 

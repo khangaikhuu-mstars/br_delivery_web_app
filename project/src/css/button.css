@@ -1,4 +1,8 @@
-.nevtrehTabletView, .loginTabletView, .signupTabletView, .orderTabletView, .urgeljluulehTabletView {
+.nevtrehTabletView,
+.loginTabletView,
+.signupTabletView,
+.orderTabletView,
+.urgeljluulehTabletView {
     position: absolute;
     width: 90%;
     max-width: 340px;
@@ -10,11 +14,11 @@
     background-color: #F17228;
 }
 
-.nevtrehTabletView{
+.nevtrehTabletView {
     top: 35%;
 }
 
-.loginTabletView{
+.loginTabletView {
     top: 35%;
 }
 
@@ -44,4 +48,25 @@
     top: 82%;
     border-radius: 0;
     width: 443px;
+}
+
+.forgetpassword {
+    border: 1px solid #F17228 !important;
+    background-color: #F17228 !important;
+    border-radius: 20px;
+    color: white;
+}
+.forgetpassword1::placeholder{
+    color: #B5B5B5 !important;
+}
+
+.forgetpassword1 {
+    border: 1px solid #FFD7BF;
+    border-radius: 20px;
+}
+.border-left{
+    border-left: 10px solid #F17228;
+}
+.mehanic-margin{
+    margin-left:40%;
 }
