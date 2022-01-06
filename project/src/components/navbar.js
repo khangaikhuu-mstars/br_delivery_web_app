@@ -70,7 +70,7 @@ const HeaderMenu = () => {
                             setShowMenu(false)
 
                         }} exact to="/">
-                            <img className="logoImg" src='/images/img.png' />
+                            <img className="logoImg" src='/img/img.png' />
                             <a className="logoText" >Food Delivery</a>
                         </NavLink>
                     </div>

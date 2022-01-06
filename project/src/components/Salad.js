@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import Card from "./Card";
 import { Container, Row } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../css/cards.css";
 
 function Salad() {
   const [mainMenu, setMainMenu] = useState([]);
