@@ -8,8 +8,6 @@
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
-        padding-left: 25px;
-    
     }
 
     .container .arrow {
@@ -21,7 +19,7 @@
         border: 0;
         /* padding-left: 13% !important; */
     }
-   
+
 
     .hmm {
         position: relative;
