@@ -6,7 +6,7 @@ import TextInput from "./TextInput.js";
 const Login = () => {
 
     return (
-        <div className="mt-20">
+        <div className=" d-flex flex-column mt-5 mb-5">
             <TextInput 
                 type={'email'}
                 name={'email'}    
@@ -16,7 +16,14 @@ const Login = () => {
                 name={'password'}    
             />
             <Buttons 
-                className={'loginTabletView'}
+                class={'loginTabletView'}
+                type={'Login'}
+            />
+            <p></p>
+            <p>or</p>
+            <Buttons 
+                class={'loginTabletView'}
+                type={'Register'}
             />
         </div>
     )
