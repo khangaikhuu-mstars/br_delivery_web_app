@@ -5,7 +5,11 @@ import "../css/login.css";
 
 const Register = () => {
   return (
-    <div className="field-contianer d-flex flex-column mt-5 mb-5 align-items-center justify-content-center">
+      
+      <div className="field-contianer d-flex flex-column mt-5 mb-5 align-items-center justify-content-center">
+      
+      <p className="hmm fw-bold">Бүртгүүлэх</p>
+
       <TextInput type={"email"} name={"И-мэйл"} />
       <TextInput type={"password"} name={"Нууц үг"} />
       <TextInput type={"password"} name={"Нууц үг давтах"} />
