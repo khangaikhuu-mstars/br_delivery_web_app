@@ -17,7 +17,7 @@ function Salad() {
 
   return (
     <Container>
-      <div className="card-style">
+      <div className="row">
         {menu.map((data) =>
         (
           <Card
