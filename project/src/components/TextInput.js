@@ -5,16 +5,12 @@ import show from "../icons/show-pass.png";
 import { useState, useEffect } from "react";
 
 const TextInput = (props) => {
-  // let value = props.value;
 
   let name = props.name;
   let type = props.type;
 
-  const toggleShow = <img type="button" src={show}></img>;
-  const toggleHide = <img type="button" src={hide}></img>;
-
-  // const isHidden = true;
-  let currentToggle = toggleHide;
+  const toggleShow = <img type="button" src={show} alt="toggle show"></img>;
+  const toggleHide = <img type="button" src={hide} alt="toggle hide"></img>;
 
   const [isHidden, setToggle] = useState(true);
   const [current, setCurrent] = useState(toggleShow);
@@ -73,7 +69,6 @@ const TextInput = (props) => {
 
 TextInput.defaultProps = {
   type: "text",
-  // name: ''
 };
 
 export default TextInput;
