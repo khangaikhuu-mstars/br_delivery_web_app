@@ -1,13 +1,18 @@
-.nevtrehTabletView, .loginTabletView, .signupTabletView, .orderTabletView, .urgeljluulehTabletView {
-    position: absolute;
-    width: 90%;
+
+
+/* position absolute arilgsan  */
+
+
+.nevtrehTabletView, .loginTabletView, .signupTabletView, .orderTabletView, .urgeljluulehTabletView{
+    /* position: absolute; */
+    /* width: 90%; */
     max-width: 340px;
     left: calc((100% - 340px)/2);
     height: 40px;
-    border: 1px solid #F17228;
-    border-radius: 20px;
+    border: 1px solid #F17228 !important;
+    border-radius: 10px;
     color: #FFFFFF;
-    background-color: #F17228;
+    background-color: #F17228 !important;
 }
 
 .nevtrehTabletView{
@@ -24,7 +29,7 @@
 
 .signupTabletView {
     top: 40%;
-    color: #F17228;
+    /* color: #F17228; */
     background: #FFFFFF;
 }
 
