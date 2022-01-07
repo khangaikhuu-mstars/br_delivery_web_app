@@ -260,6 +260,7 @@ nav {
     border-radius: 10px;
     background-color: white;
     padding: 10px;
+    padding-top: 0;
   }
   #dropMenuBorder {
     border-bottom: 1px #f17228 solid;

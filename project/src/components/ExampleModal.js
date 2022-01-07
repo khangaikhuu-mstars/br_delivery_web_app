@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Modal, Button } from 'react-bootstrap';
+import { Modal } from 'react-bootstrap';
 import '../css/modal.css'
 function TestModal(props) {
     const [show, setShow] = useState(true);
@@ -7,7 +7,6 @@ function TestModal(props) {
         setShow(false);
         props.showHandler(false);
     }
-    const handleShow = () => setShow(true);
     let price = props.data.sales ? <div className='d-flex'><div className="modalPrice">{new Intl.NumberFormat().format(props.data.price - props.data.price * props.data.percent / 100)}₮ </div><strike className="strike-dark">{new Intl.NumberFormat().format(props.data.price)}₮ </strike> </div> : <div className='modalPrice'>{props.data.price}</div>
     return (
         <>

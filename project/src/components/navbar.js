@@ -9,39 +9,56 @@ const HeaderMenu = () => {
     if (showMenu) {
         menu = <div className="dropMenu">
             <div className="dropMenuSection">
-                <div className="dropMenuContent" id="dropMenuBorder">
-                    <div className="dropMenuMinSection">
-                        <div className="dropMenuImg">
-                            <img src="/icons/forkandknife.svg" alt="" />
-                        </div > <NavLink className="dropMenuText" onClick={() => {
-                            setShowMenu(!showMenu)
-                        }} to="/menu">Хоолны цэс</NavLink>
-                    </div >
-                    <img className="seeMore" src="/icons/seemore.svg" alt="#" />
+                <div id="dropMenuBorder">
+                    <NavLink onClick={() => {
+                        setShowMenu(!showMenu)
+                    }}
+                        className="dropMenuContent dropMenuText"
+                        to="/menu">
+                        <div className="dropMenuMinSection">
+                            <div className="dropMenuImg">
+                                <img src="/icons/forkandknife.svg" alt="" />
+                            </div >
+                            <div >Хоолны цэс</div>
+                        </div >
+                        <img className="seeMore" src="/icons/seemore.svg" alt="#" />
+                    </NavLink>
                 </div >
-                <div className="dropMenuContent">
+                <NavLink className="dropMenuText dropMenuContent" onClick={() => {
+                    setShowMenu(!showMenu)
+                }} to="/delivery">
                     <div className="dropMenuMinSection">
+
                         <div className="dropMenuImg">
                             <img src="/icons/map.svg" alt="" />
                         </div>
-                        <NavLink className="dropMenuText" onClick={() => {
-                            setShowMenu(!showMenu)
-                        }} to="/delivery">Хүргэлтийн бүс </NavLink>
+                        <div>
+                            Хүргэлтийн бүс
+                        </div>
                     </div>
                     <img className="seeMore" src="/icons/seemore.svg" alt="#" />
-                </div>
+                </NavLink>
             </div >
             <div className="dropMenuSection">
-                <div className="dropMenuContent" id="dropMenuBorder">
-                    <div className="dropMenuMinSection" >
-                        <div className="dropMenuImg">
-                            <img src="/icons/rounduser.svg" alt="" />
+                <div id="dropMenuBorder">
+                    <NavLink onClick={() => {
+                        setShowMenu(!showMenu)
+                    }}
+                        className="dropMenuContent dropMenuText"
+                        to="/asdasdasd">
+                        <div className="dropMenuMinSection" >
+                            <div className="dropMenuImg">
+                                <img src="/icons/rounduser.svg" alt="" />
+                            </div>
+                            <div>Хэрэглэгчийн мэдээлэл</div>
                         </div>
-                        <a className="dropMenuText" >Хэрэглэгчийн мэдээлэл</a>
-                    </div>
-                    <img className="seeMore" src="/icons/seemore.svg" alt="#" />
+                        <img className="seeMore" src="/icons/seemore.svg" alt="#" />
+                    </NavLink>
                 </div>
-                <div className="dropMenuContent">
+
+                <NavLink className="dropMenuText dropMenuContent" onClick={() => {
+                    setShowMenu(!showMenu)
+                }} to="/uahgbiebrg">
                     <div className="dropMenuMinSection">
                         <div className="dropMenuImg">
                             <img src="/icons/market.svg" alt="" />
@@ -49,7 +66,7 @@ const HeaderMenu = () => {
                         <a className="dropMenuText" >Миний захиалга</a>
                     </div>
                     <img className="seeMore" src="/icons/seemore.svg" alt="#" />
-                </div>
+                </NavLink>
             </div>
         </div >
     }
