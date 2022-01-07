@@ -7,7 +7,7 @@
         
         font-style: normal;
         font-weight: bold;
-        font-size: 14px
+        font-size: 14px;
     }
 
     .container .arrow {
@@ -19,9 +19,7 @@
         border: 0;
         /* padding-left: 13% !important; */
     }
-    .ondor{
-        width: 20px;
-    }
+
 
     .hmm {
         position: relative;

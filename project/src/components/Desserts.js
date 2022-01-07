@@ -29,6 +29,8 @@ function Desserts() {
               price={i.price}
               sales={i.sales}
               percent={i.discountPercentage}
+
+              ingredients={i.ingredients}
             />
           );
         })}
