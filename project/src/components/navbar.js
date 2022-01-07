@@ -108,10 +108,12 @@ const HeaderMenu = () => {
                 </div>
               </li>
               <li className="userBusketList">
-                <div className="userBusketElement">
-                  <img src="/icons/usericon.svg" />
-                  <a href="">Нэвтрэх</a>
-                </div>
+                <NavLink to='/login'>
+                  <div className="userBusketElement">
+                    <img src="/icons/usericon.svg" />
+                    <a href="">Нэвтрэх</a>
+                  </div>
+                </NavLink>
               </li>
             </ul>
           </div>
