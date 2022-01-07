@@ -45,6 +45,24 @@ const TextInput = (props) => {
         </span>
       </div>
     );
+  if (type === "text")
+    defInput = (
+      <div className="input-container d-flex">
+        <Form.Control
+          className="input-field"
+          placeholder="Нэрээ оруулна уу"
+        />
+      </div>
+    )
+  if (type === "tel")
+    defInput = (
+      <div className="input-container d-flex">
+        <Form.Control
+          className="input-field"
+          placeholder="Утасны дугаараа оруулна уу"
+        />
+      </div>
+    )
 
   if (type === "textField")
     defInput = (

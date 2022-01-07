@@ -15,6 +15,7 @@ import NotFound from "./components/NotFound";
 import PageInsideMenu from "./components/PageInsideMenu";
 import TermOfUse from "./components/TermOfUse"
 import Privacy from './components/Privacy'
+import UserProfile from "./components/UserProfile";
 
 function App() {
   return (
@@ -32,12 +33,12 @@ function App() {
         <Route path="/login" component={Login} />
         <Route path="/register" component={Register} /> 
         <Route path="/pageInsideMenu" component={PageInsideMenu} />
+        <Route path="/userProfile" component={UserProfile}/>
         <Route component={NotFound}/>
 
 
       </Switch>
       <Footer />
-
 
     </BrowserRouter>
   );
