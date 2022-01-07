@@ -30,7 +30,7 @@ const ForgetPassword = () => {
                 </div>
 
                  <div className=" row">
-                <input type="button" onClick={onPassword} className="forgetpassword col-sm-10 col-md-8  col-lg-7 py-2 " value="Үргэлжлүүлэх" />
+                <input type="button" onClick = { onPassword } className="forgetpassword col-sm-10 col-md-8  col-lg-7 py-2 " value="Үргэлжлүүлэх" />
 
                  </div>
             </form>
