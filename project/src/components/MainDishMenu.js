@@ -10,7 +10,7 @@ function MainDishMenu() {
       .then((response) => response.json())
       .then((data) => setMainMenu(data));
   }, []);
-  console.log(mainMenu);
+
   let menu = mainMenu.filter((j) => j.category === "үндсэн хоол");
   return (
     <Container>
@@ -24,6 +24,7 @@ function MainDishMenu() {
               stock={data.stock}
               img={data.img}
               category={data.category}
+              ingredients={data.ingredients}
             />
           );
         })}
