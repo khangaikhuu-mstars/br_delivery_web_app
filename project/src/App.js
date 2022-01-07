@@ -28,10 +28,21 @@ function App() {
         <Route path="/search" component={Search} />
         <Route path="/user" component={User} />
         <Route path="/market" component={Market} />
+<<<<<<< HEAD
         <Route path="/termofuse" component={TermOfUse} />
         <Route path="/privacy" component={Privacy} />
         <Route path="/orderhistory" component={OrderHistory} />
         <Route component={NotFound} />
+=======
+        <Route path="/termofuse" component={TermOfUse}/>
+        <Route path="/privacy" component={Privacy}/>
+        <Route path="/login" component={Login} />
+        <Route path="/register" component={Register} /> 
+        <Route path="/pageInsideMenu" component={PageInsideMenu} />
+        <Route component={NotFound}/>
+
+
+>>>>>>> cb6c686929464400f54d2a1997d9fc45cf37cb45
       </Switch>
       <Footer />
 
