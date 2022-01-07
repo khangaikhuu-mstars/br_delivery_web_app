@@ -1,6 +1,6 @@
 import React from "react";
 import Buttons from './Button'
-
+import '../css/addfood.css'
 
 const AddFood = () => {
 
@@ -21,8 +21,9 @@ const AddFood = () => {
                 <button className='counterButton '>+</button>
             </div>
             
-            {/* <Buttons class={'orderTabletView'} type={'Захиалах'}/> */}
-            <button className='orderButton'>Захиалах</button>
+            <Buttons class={'orderTabletView'} type={'Захиалах'}/>
+            {/* <Buttons class={'orderTabletView orderButton'} type={'Захиалах'}/> */}
+            {/* <button className='orderButton'>Захиалах</button> */}
         </div>
     );
 }
