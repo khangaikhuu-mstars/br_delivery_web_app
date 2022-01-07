@@ -27,14 +27,14 @@ const Login = () => {
         Нууц үгээ мартсан уу.
       </a>
 
-      <Buttons class={"loginTabletView"} type={"Login"} />
+      <Buttons class={"loginTabletView"} type={"нэвтрэх"} />
       <p className="underline">эсвэл</p>
 
       <Link to={'/register'} className="registerButton">
         <Buttons
           className="registerButton"
           class={"loginTabletView"}
-          type={"Register"}
+          type={"Бүртгүүлэх"}
         // onClick={() => routeChange()}
         />
       </Link>
