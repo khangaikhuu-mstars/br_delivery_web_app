@@ -25,16 +25,15 @@ function App() {
         <Route path="/search" component={Search} />
         <Route path="/user" component={User} />
         <Route path="/market" component={Market} />
-        <Route path="/termofuse" component={TermOfUse}/>
-        <Route path="/privacy" component={Privacy}/>
-        <Route component={NotFound}/>
+        <Route path="/termofuse" component={TermOfUse} />
+        <Route path="/privacy" component={Privacy} />
+        <Route component={NotFound} />
 
         <Route path="/pageInsideMenu" component={PageInsideMenu} />
 
       </Switch>
-      {/* <TermOfUse/> */}
       <Footer />
-     
+
 
     </BrowserRouter>
   );
