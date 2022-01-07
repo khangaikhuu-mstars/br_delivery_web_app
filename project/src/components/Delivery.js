@@ -2,8 +2,7 @@ import React, { useEffect } from 'react';
 import { useState } from 'react';
 import googlemaps from '../img/maps.jpeg'
 import '../css/delivery.css';
-import Map from './Map'
-
+import DeliveryZone from './Map';
 
 
 const Delivery = () => {
@@ -22,11 +21,12 @@ const Delivery = () => {
     }, [])
     let sliced16 = house.slice(0, 17)
     let sliced5 = house.slice(0, 5)
-    const position = [47.9234174, 106.9324722, 17.13]
+
+
     return (
-        
+
         <div className='d-flex flex-column'>
-            <Map/>
+           
             <div className='container order-1 row mx-auto '>
                 <p className='mobileOff borderLeft px-3 my-2 py-1 me-4 ms-2 fw-bold'>Хүргэлтийн бүс дэх хаягууд</p>
                 <div id='delivery-1' className='bg-white d-block d-md-none radius py-2 my-3 px-4'>
@@ -146,13 +146,13 @@ const Delivery = () => {
 
             </div>
             <div id="map" className='col-12 d-none container d-lg-block my-5 order-0'>
-                <img className='img-fluid mapspic' src={googlemaps} alt="" />
+            <DeliveryZone />
             </div>
             <div id="map" className='col-12 d-block  d-md-none my-5 order-2'>
-                <img className='img-fluid mapspic' src={googlemaps} alt="" />
+            <DeliveryZone />
             </div>
             <div id="map" className='col-12 d-none d-md-block d-lg-none my-5 order-0'>
-                <img className='img-fluid mapspic' src={googlemaps} alt="" />
+            <DeliveryZone />
             </div>
           
         </div>
