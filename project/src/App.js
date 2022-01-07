@@ -1,15 +1,11 @@
 import React from "react";
-import InfoPanel from './components/InfoPanel';
-import Footer from "./components/Footer";
-import Slider from "./components/Slider";
 import "./App.css";
+import SearchBar from "./components/SearchBar";
 
 function App() {
   return (
     <div>
-      <Slider/>
-      <InfoPanel/>
-      <Footer />
+      <SearchBar />
     </div>
   );
 
