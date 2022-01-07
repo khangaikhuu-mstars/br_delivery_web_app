@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "../css/navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { NavLink, Switch } from "react-router-dom";
+import { faBars, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
+import { NavLink } from "react-router-dom";
 const HeaderMenu = () => {
     const [showMenu, setShowMenu] = useState(false)
     let menu;
@@ -60,7 +60,7 @@ const HeaderMenu = () => {
                 <div className="headerMenu">
                     <FontAwesomeIcon
                         className='toggleButton'
-                        icon={faBars}
+                        icon={showMenu ? faChevronLeft : faBars}
                         onClick={() => {
                             setShowMenu(!showMenu)
                         }}
