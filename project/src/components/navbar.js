@@ -14,8 +14,14 @@ const HeaderMenu = () => {
             <div className="dropMenuMinSection">
               <div className="dropMenuImg">
                 <img src="/icons/forkandknife.svg" alt="" />
-              </div>
-              <NavLink className="dropMenuText" to="/menu">
+              </div>{" "}
+              <NavLink
+                className="dropMenuText"
+                onClick={() => {
+                  setShowMenu(!showMenu);
+                }}
+                to="/menu"
+              >
                 Хоолны цэс
               </NavLink>
             </div>
@@ -26,7 +32,13 @@ const HeaderMenu = () => {
               <div className="dropMenuImg">
                 <img src="/icons/map.svg" alt="" />
               </div>
-              <NavLink className="dropMenuText" to="/delivery">
+              <NavLink
+                className="dropMenuText"
+                onClick={() => {
+                  setShowMenu(!showMenu);
+                }}
+                to="/delivery"
+              >
                 Хүргэлтийн бүс{" "}
               </NavLink>
             </div>
@@ -69,12 +81,18 @@ const HeaderMenu = () => {
             }}
           />
           <div className="logo">
-            <NavLink className="logoItems" exact to="/">
-              <img className="logoImg" src="/img/images/img.png" />
+            <NavLink
+              className="logoItems"
+              onClick={() => {
+                setShowMenu(false);
+              }}
+              exact
+              to="/"
+            >
+              <img className="logoImg" src="/img/img.png" />
               <a className="logoText">Food Delivery</a>
             </NavLink>
           </div>
-
           <ul className="menu" id="basic-navbar-nav">
             <li>
               <NavLink activeClassName="activeMenuItem" exact to="/">
@@ -108,7 +126,7 @@ const HeaderMenu = () => {
                 </div>
               </li>
               <li className="userBusketList">
-                <NavLink to='/login'>
+                <NavLink to="/login">
                   <div className="userBusketElement">
                     <img src="/icons/usericon.svg" />
                     <a href="">Нэвтрэх</a>
@@ -119,7 +137,7 @@ const HeaderMenu = () => {
           </div>
         </div>
       </header>
-      <div className="hidemenu">{menu}</div>
+      {menu}
     </nav>
   );
 };

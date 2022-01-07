@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ModalContext } from "react";
 import "./App.css";
 import HeaderMenu from './components/navbar'
 import Home from "./components/Home";
@@ -36,9 +36,8 @@ function App() {
 
 
       </Switch>
-      {/* <TermOfUse/> */}
       <Footer />
-     
+
 
     </BrowserRouter>
   );
