@@ -25,7 +25,7 @@ const HeaderMenu = () => {
           </NavLink>
         </div >
         <NavLink className="dropMenuText dropMenuContent" onClick={() => {
-          setShowMenu(!showMenu)
+          setShowMenu(false)
         }} to="/delivery">
           <div className="dropMenuMinSection">
 
