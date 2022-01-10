@@ -86,6 +86,7 @@
     background-color: #f17228;
     text-align: center;
     padding: 13px 0;
+    border-radius: 10px;
   }
   .sizeButton {
     padding: 9.5px 73px;
@@ -129,6 +130,7 @@
     border: none;
     background-color: #f17228;
     color: white;
+    border-radius: 10px;
     width: 618px;
     padding: 13px 0;
   }
