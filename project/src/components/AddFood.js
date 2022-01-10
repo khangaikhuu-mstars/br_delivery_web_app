@@ -5,10 +5,13 @@ import "../css/addfood.css";
 const AddFood = () => {
   const [count, setCount] = useState(1);
   const [portion, setPortionSize] = useState(1);
-  const [active, setActiveButton] = useState(true);
+  const [active, setActive] = useState(true);
+  const [activeButton, setActiveButton] = useState('add1');
 
   const handlePortion = (size) => {
-    setActiveButton(() => !active);
+    setActive(() => 
+        !active
+    );
     setPortionSize(() => size);
   };
 
@@ -26,14 +29,24 @@ const AddFood = () => {
         <h5 className="modalHeader">Хэмжээ</h5>
         <div className="modalSizeButtons">
           <button
-            className={`sizeButton ${active ? "activeButton" : ""}`}
-            onClick={() => handlePortion(1)}
+            id='add1'
+            className={`sizeButton ${activeButton === 'add1' && active ? "activeButton" : ""}`}
+            onClick={(event) => {
+              console.log(event.target.id);
+              setActiveButton("add1")
+              handlePortion(1);
+            }}
           >
             1 хүн
           </button>
           <button
-            className={`sizeButton ${!active ? "activeButton" : ""}`}
-            onClick={() => handlePortion(2)}
+            id='add2'
+            className={`sizeButton ${activeButton === 'add2' && !active ? "activeButton" : ""}`}
+            onClick={(event) => {
+                console.log(event.target.id);
+                setActiveButton("add2")
+                handlePortion(2);
+              }}
           >
             2 хүн
           </button>
