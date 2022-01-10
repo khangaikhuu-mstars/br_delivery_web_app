@@ -5,11 +5,9 @@ import "../css/addfood.css";
 const AddFood = () => {
   const [count, setCount] = useState(1);
   const [portion, setPortionSize] = useState(1);
-  const [active, setActive] = useState(true);
   const [activeButton, setActiveButton] = useState("add1");
 
   const handlePortion = (size) => {
-    setActive(() => !active);
     setPortionSize(() => size);
   };
 
@@ -18,7 +16,7 @@ const AddFood = () => {
   };
 
   const sendFoodCount = (count, size) => {
-    console.log("Ordered food:", count, "Portion:", size);
+    console.log("Order:", count, 'foodId,', "portion:", size);
   };
 
   return (
@@ -64,8 +62,6 @@ const AddFood = () => {
         </button>
       </div>
 
-      {/* <Buttons class={"orderTabletView"} type={"Захиалах"} /> */}
-      {/* <Buttons class={'orderTabletView orderButton'} type={'Захиалах'}/> */}
       <button
         className="orderButton"
         onClick={() => sendFoodCount(count, portion)}
