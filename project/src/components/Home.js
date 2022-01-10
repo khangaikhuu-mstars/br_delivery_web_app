@@ -12,7 +12,6 @@ function Home() {
             <Slider />
             <InfoPanel />
             <CategoryLabel/>
-            <NewPassword/>
         </div>
     );
 
