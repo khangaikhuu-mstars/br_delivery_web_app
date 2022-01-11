@@ -42,7 +42,7 @@ const AddressVertification = () => {
                             </p>
                             <img src={navlogo} alt="" className="uuu" />
 
-                            <input type="button" value="Захиалах" className="col-12 shargal11" />
+                            <input type="button" value="Захиалах" className="col-12 p-2 m-2 `                                                                                                                                           shargal11" />
 
 
                         </form>

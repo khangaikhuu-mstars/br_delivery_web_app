@@ -27,13 +27,22 @@ box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: "Poppins";
 font-style: normal;
 font-weight: 600;
-font-size: 14px;
+font-size: 16px;
 line-height: 21px;
 
-}
-.checkbox{
-    color: #F17228;
 }
 .checkbox::after{
     color: yellow;
 }
+input[type="checkbox"]{
+    background-color: #F17228 ;
+    border: 7px solid #F17228 !important;
+    border-radius: 3px !important;
+    appearance: none !important;
+}
+input:checked[type=checkbox]{
+    color: white;
+    appearance: auto !important;
+}
+
+
