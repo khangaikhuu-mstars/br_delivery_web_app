@@ -2,7 +2,6 @@
 import React from "react";
 import Buttons from "./Button.js";
 import TextInput from "./TextInput.js";
-import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "../css/login.css";
 
@@ -20,14 +19,13 @@ const Login = () => {
     <div className="field-contianer d-flex flex-column mt-5 mb-5 align-items-center justify-content-center">
       <p className="col-6 hmm fw-bold ms-2 ">нэвтрэх</p>
 
-      <TextInput type={"email"} name={"И-мэйл"} />
-      <TextInput type={"password"} name={"Нууц үг"} />
+      <TextInput id='email' type={"email"} name={"И-мэйл"}/>
+      <TextInput id='password' type={"password"} name={"Нууц үг"} />
 
-      <a className="forgotPass mb-4" href="#">
-        Нууц үгээ мартсан уу.
-      </a>
+      <a className="forgotPass mb-4" href="#">Нууц үгээ мартсан уу.</a>
 
       <Buttons class={"loginTabletView"} type={"нэвтрэх"} />
+
       <p className="underline">эсвэл</p>
 
       <Link to={'/register'} className="registerButton">
