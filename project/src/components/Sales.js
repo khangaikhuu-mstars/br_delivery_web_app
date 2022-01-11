@@ -13,7 +13,7 @@ function Sales() {
   let mainSales = sale.filter((i) => i.sales === true).slice(0, 4);
   return (
     <Container>
-      <div className="row">
+      <div className="row ">
         {mainSales.map((i) => (
           <Card
             img={i.img}
@@ -22,6 +22,7 @@ function Sales() {
             price={i.price}
             sales={i.sales}
             percent={i.discountPercentage}
+            ingredients={i.ingredients}
           />
         ))}
       </div>
