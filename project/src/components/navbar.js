@@ -3,6 +3,7 @@ import "../css/navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { NavLink, Switch } from "react-router-dom";
+import SearchBar from "./SearchBar"
 const HeaderMenu = () => {
   const [showMenu, setShowMenu] = useState(false);
   let menu;
@@ -111,12 +112,7 @@ const HeaderMenu = () => {
             </li>
           </ul>
           <div className="icons">
-            <input
-              className="searchBox"
-              type="text"
-              placeholder="&#128269; Хайх"
-            />
-            <img className="searchIcon" src="/icons/searchicon.svg" />
+            <SearchBar />
             <img className="mobileUser" src="/icons/mobileuser.svg" />
             <ul className="userBusket">
               <li className="userBusketList">

@@ -1,5 +1,3 @@
-@media only screen and (max-width: 600px) {
-
  .search {
     background: rgba(255, 255, 255, 0.5);
     box-sizing: border-box;
@@ -35,7 +33,7 @@
   }
   
   .search:focus-within {
-    width: 100%;
+    width: 100vh;
     border: 1px solid #FBC5A6;
   }
     
@@ -49,4 +47,3 @@
   .search__submit:focus {
     outline: 0;
   }
-}
