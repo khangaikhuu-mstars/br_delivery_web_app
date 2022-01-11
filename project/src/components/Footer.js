@@ -55,12 +55,18 @@ const Footer = () => {
                         <div className="row  col-md-8 col-lg-8 d-md-flex my-3 ">
                             <div className="col-md-12 col-lg-6 text-md-end  ">
                                 <div className=" row text-sm-start text-md-end d-md-flex  ">
-                                    <p className="nuuts order-md-2 px-2 col-md-6 ">
-                                        Нууцлалын бодлого
-                                    </p>
-                                    <p className="nuuts order-md-1 px-2 col-md-6 ">
-                                        Үйлчилгээний нөхцөл
-                                    </p>
+                                    <NavLink className="faceItems nuuts order-md-1 px-2 col-md-6 " to="/privacy">
+                                        <p className="text-white ">
+                                            Нууцлалын бодлого
+                                        </p>
+                                    </NavLink>
+
+                                    <NavLink className="faceItems nuuts order-md-1 px-2 col-md-6 " to="/termofuse">
+                                        <p className=" text-white">
+                                            Үйлчилгээний нөхцөл
+                                        </p>
+                                    </NavLink>
+
                                 </div>
                             </div>
                             <div className="text-end col-lg-6 my-2 pb-5">

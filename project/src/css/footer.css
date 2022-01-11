@@ -71,7 +71,6 @@
 footer {
   background-image: url(../icons/background_image.png);
   color: white;
-  font-family: Poppins;
   font-style: normal;
   display: flex;
 }
@@ -88,13 +87,11 @@ footer {
 .margin100 {
   margin-top: 70px;
 }
-
 .nuuts {
   font-weight: normal;
   font-size: 16px;
   line-height: 21px;
 }
-
 .last {
   font-weight: normal;
   font-size: 14px;

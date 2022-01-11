@@ -1,20 +1,16 @@
 import { Form, InputGroup } from "react-bootstrap";
-import "../css/textfield-style.css";
+import "../css/textfield.css";
 import hide from "../icons/hide-pass.png";
 import show from "../icons/show-pass.png";
 import { useState, useEffect } from "react";
 
 const TextInput = (props) => {
-  // let value = props.value;
 
   let name = props.name;
   let type = props.type;
 
-  const toggleShow = <img type="button" src={show}></img>;
-  const toggleHide = <img type="button" src={hide}></img>;
-
-  // const isHidden = true;
-  let currentToggle = toggleHide;
+  const toggleShow = <img type="button" src={show} alt="toggle show"></img>;
+  const toggleHide = <img type="button" src={hide} alt="toggle hide"></img>;
 
   const [isHidden, setToggle] = useState(true);
   const [current, setCurrent] = useState(toggleShow);
@@ -29,7 +25,7 @@ const TextInput = (props) => {
 
   let defInput = (
     <div className="input-container d-flex">
-      <Form.Control className="input-field" type={type} placeholder="Example" />
+      <Form.Control className="input-field" type={type} placeholder={'И-мэйл хаягаа оруулна уу.'} />
     </div>
   );
   if (type === "password")
@@ -73,7 +69,6 @@ const TextInput = (props) => {
 
 TextInput.defaultProps = {
   type: "text",
-  // name: ''
 };
 
 export default TextInput;
