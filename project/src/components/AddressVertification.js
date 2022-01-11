@@ -4,7 +4,12 @@ import "../css/adress.css";
 
 
 const AddressVertification = () => {
-
+    function onlyOne(checkbox) {
+        var checkboxes = document.getElementsByName('check')
+        checkboxes.forEach((item) => {
+            if (item !== checkbox) item.checked = false
+        })
+    }
     return (
         <div className="container">
             <div className="row">
@@ -36,8 +41,8 @@ const AddressVertification = () => {
                             <input type="text" className="col-12 p-2 m-2 inputStyle" placeholder="Утасны дугаар оруулна уу." />
                             <p className="p-2 m-2 text-shargal">Төлбөр төлөх</p>
                             <p className="col-12 p-2 m-2 d-flex justify-content-start">
-                                <span className="col-6"> <input className="checkbox" type="checkbox" />Бэлнээр</span>
-                                <span className="col-6"><input className="checkbox" type="checkbox" /> Картаар</span>
+                                <span className="col-6"> <input className="checkbox" type="checkbox" name="check" onclick={onlyOne(this)} />Бэлнээр</span>
+                                <span className="col-6"><input className="checkbox" type="checkbox" name="check" onclick={onlyOne(this)}/> Картаар</span>
 
                             </p>
                             <img src={navlogo} alt="" className="uuu" />

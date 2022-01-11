@@ -35,14 +35,22 @@ line-height: 21px;
     color: yellow;
 }
 input[type="checkbox"]{
-    background-color: #F17228 ;
-    border: 7px solid #F17228 !important;
-    border-radius: 3px !important;
+    background-color: white ;
+    border: 1px solid #F17228 !important;
+    border-radius: 10px !important;
     appearance: none !important;
-}
-input:checked[type=checkbox]{
-    color: white;
-    appearance: auto !important;
+    width: 13px;
+    height: 13px;
+
 }
 
+input:checked[type=checkbox]{
+    color: white;
+    appearance: none !important;
+    border: 7px solid #F17228 !important;
+    border-radius: 10px !important;
+    width: 13px;
+    height: 13px;
+    background-color: #F17228 !important;
+}
 
