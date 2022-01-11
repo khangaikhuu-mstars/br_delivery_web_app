@@ -33,12 +33,8 @@ function App() {
         <Route path="/register" component={Register} /> 
         <Route path="/pageInsideMenu" component={PageInsideMenu} />
         <Route component={NotFound}/>
-
-
       </Switch>
       <Footer />
-
-
     </BrowserRouter>
   );
 }
