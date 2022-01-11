@@ -9,11 +9,11 @@ import "../css/login.css";
 const Login = () => {
 
 
-  const history = useHistory();
-  const routeChange = () => {
-    let path = "/register";
-    history.push(path);
-  };
+  // const history = useHistory();
+  // const routeChange = () => {
+  //   let path = "/register";
+  //   history.push(path);
+  // };
 
 
   return (
@@ -22,19 +22,22 @@ const Login = () => {
 
       <TextInput type={"email"} name={"И-мэйл"} />
       <TextInput type={"password"} name={"Нууц үг"} />
+
       <a className="forgotPass mb-4" href="#">
         Нууц үгээ мартсан уу.
       </a>
-      {/* <p></p> */}
-      <Buttons class={"loginTabletView"} type={"Login"} />
-      {/* <p></p> */}
+
+      <Buttons class={"loginTabletView"} type={"нэвтрэх"} />
       <p className="underline">эсвэл</p>
-      <Buttons
-        className="registerButton"
-        class={"loginTabletView"}
-        type={"Register"}
-        onClick={() => routeChange()}
-      />
+
+      <Link to={'/register'} className="registerButton">
+        <Buttons
+          className="registerButton"
+          class={"loginTabletView"}
+          type={"Бүртгүүлэх"}
+        // onClick={() => routeChange()}
+        />
+      </Link>
     </div>
   );
 };
