@@ -9,11 +9,11 @@ import "../css/login.css";
 const Login = () => {
 
 
-  const history = useHistory();
-  const routeChange = () => {
-    let path = "/register";
-    history.push(path);
-  };
+  // const history = useHistory();
+  // const routeChange = () => {
+  //   let path = "/register";
+  //   history.push(path);
+  // };
 
 
   return (
@@ -32,12 +32,15 @@ const Login = () => {
       <Buttons class={"loginTabletView"} type={"Login"} />
       {/* <p></p> */}
       <p className="underline">эсвэл</p>
-      <Buttons
-        className="registerButton"
-        class={"loginTabletView"}
-        type={"Register"}
-        onClick={() => routeChange()}
-      />
+
+      <Link to={'/register'} className="registerButton">
+        <Buttons
+          className="registerButton"
+          class={"loginTabletView"}
+          type={"Бүртгүүлэх"}
+        // onClick={() => routeChange()}
+        />
+      </Link>
     </div>
   );
 };
