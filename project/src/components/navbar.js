@@ -123,7 +123,7 @@ const HeaderMenu = () => {
               <li className="userBusketList">
                 <div className="userBusketElement">
                   {/* <img src="/icons/busketicon.svg" /> */}
-                  <a href="">Сагс</a>
+                  {/* <a href="">Сагс</a> */}
                   <CartSidebar />
                 </div>
               </li>
