@@ -5,7 +5,6 @@ import show from "../icons/show-pass.png";
 import { useState, useEffect } from "react";
 
 const TextInput = (props) => {
-
   let name = props.name;
   let type = props.type;
   let id = props.id;
@@ -22,6 +21,7 @@ const TextInput = (props) => {
   };
   
   useEffect(() => {
+<<<<<<< HEAD
     if (isHidden) {
       setType(type)
       setCurrent(toggleShow);
@@ -30,6 +30,9 @@ const TextInput = (props) => {
       setType('text')
       setCurrent(toggleHide)
     }
+=======
+    isHidden ? setCurrent(toggleShow) : setCurrent(toggleHide);
+>>>>>>> 7d0ff2127c5c9a2b64dcae510ad028ea695e7e6b
   }, [isHidden]);
 
   // const checkValue = (data) => {
@@ -38,7 +41,11 @@ const TextInput = (props) => {
 
   let defInput = (
     <div className="input-container d-flex">
-      <Form.Control className="input-field" type={type} placeholder={'И-мэйл хаягаа оруулна уу.'} />
+      <Form.Control
+        className="input-field"
+        type={type}
+        placeholder={"И-мэйл хаягаа оруулна уу."}
+      />
     </div>
   );
   if (type === "password")
