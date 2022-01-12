@@ -5,6 +5,7 @@ import "../css/login.css";
 import { Form } from "react-bootstrap";
 
 const Register = () => {
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(
