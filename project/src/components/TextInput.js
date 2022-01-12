@@ -5,7 +5,6 @@ import show from "../icons/show-pass.png";
 import { useState, useEffect } from "react";
 
 const TextInput = (props) => {
-
   let name = props.name;
   let type = props.type;
   let id = props.id;
@@ -38,7 +37,11 @@ const TextInput = (props) => {
 
   let defInput = (
     <div className="input-container d-flex">
-      <Form.Control className="input-field" type={type} placeholder={'И-мэйл хаягаа оруулна уу.'} />
+      <Form.Control
+        className="input-field"
+        type={type}
+        placeholder={"И-мэйл хаягаа оруулна уу."}
+      />
     </div>
   );
   if (type === "password")
