@@ -4,39 +4,46 @@ import Buttons from "./Button.js";
 import TextInput from "./TextInput.js";
 import { Link } from "react-router-dom";
 import "../css/login.css";
+import { Form } from "react-bootstrap";
 
 const Login = () => {
-
-
-  // const history = useHistory();
-  // const routeChange = () => {
-  //   let path = "/register";
-  //   history.push(path);
-  // };
-
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(
+      "Email:",
+      e.target.email.value,
+      "Password:",
+      e.target.password.value
+    );
+  };
 
   return (
-    <div className="field-contianer d-flex flex-column mt-5 mb-5 align-items-center justify-content-center">
+    <Form
+      onSubmit={handleSubmit}
+      className="field-contianer d-flex flex-column mt-5 mb-5 align-items-center justify-content-center"
+    >
       <p className="col-6 hmm fw-bold ms-2 ">нэвтрэх</p>
 
-      <TextInput id='email' type={"email"} name={"И-мэйл"}/>
-      <TextInput id='password' type={"password"} name={"Нууц үг"} />
+      <TextInput id="email" type={"email"} name={"И-мэйл"} />
+      <TextInput id="password" type={"password"} name={"Нууц үг"} />
 
-      <a className="forgotPass mb-4" href="#">Нууц үгээ мартсан уу.</a>
+      <a className="forgotPass mb-4" href="#">
+        Нууц үгээ мартсан уу.
+      </a>
 
-      <Buttons class={"loginTabletView"} type={"нэвтрэх"} />
+      <Buttons class={"loginTabletView"} type={"submit"} name={"login"} />
 
       <p className="underline">эсвэл</p>
 
-      <Link to={'/register'} className="registerButton">
+      <Link to={"/register"} className="registerButton">
         <Buttons
           className="registerButton"
           class={"loginTabletView"}
-          type={"Бүртгүүлэх"}
-        // onClick={() => routeChange()}
+          type="submit"
+          name={"register"}
         />
       </Link>
-    </div>
+    </Form>
   );
 };
 
