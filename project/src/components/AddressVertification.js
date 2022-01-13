@@ -12,11 +12,12 @@ const AddressVertification = () => {
     }
     return (
         <div className="container">
-            <div className="row">
-                <div className="col-12  col-lg-6">
-                    <div className="gadna " >
+            <div className="row my-2 py-2 ">
+                <div className="col-12 d-flex flex-column    col-lg-6">
+                    <p className="d-none d-md-block my-2 py-2 col-md-8 col-lg-7 col-xl-6 shargal11 ">Алхам 1 > Хаягийн мэдээлэл оруулах</p>
+                    <div className="gadna my-3 ondorOghoos " >
                         <form action="" className="forms m-auto">
-                            <p className="p-2 m-2 d-md-none text-shargal">Хаягын мэдээлэл</p>
+                            <p className="p-2 m-2 col-12 d-md-none text-shargal">Хаягын мэдээлэл</p>
                             <p className="d-none p-2 col-12 col-md-8 m-2 d-md-block align-items-start turshilt text-shargal"> Хаягаа оруулна уу</p>
                             <select name="" id="" className="col-12 col-md-8 m-2 p-2 inputStyle selectbox">
 
@@ -48,7 +49,7 @@ const AddressVertification = () => {
                             </p>
                             <img src={navlogo} alt="" className="uuu" />
 
-                            <input type="button" value="Захиалах" className="col-12 p-2 m-2 `                                                                                                                                           shargal11" />
+                            <input type="button" value="Захиалах" className="col-12 p-2 m-2 shargal11 d-md-none" />
 
 
                         </form>
@@ -56,9 +57,19 @@ const AddressVertification = () => {
                     </div>
 
                 </div>
-                <div className="col-12 d-none d-md-block col-lg-6">
+                <div className="col-12 d-none d-md-block col-lg-6  ">
+                    <p className="d-none d-md-block my-2 py-2 col-md-8 col-lg-7 col-xl-6 shargal11 ">Алхам 2 > Захиалага баталгаажуулах</p>
+                    <div className="gadna my-4 d-flex flex-column  justify-content-between ondorOghoos   " >
+                        <div className="align-items-center d-flex flex-column justify-content-center ">
+                            <p className="py-2 my-2"> Саламан загас (1)   <span className="text-shargal px-5 mx-5">11800₮ <button type="button " class="btn-close mx-5" aria-label="Close"></button> </span>   </p>
+                            <p className="py-2 my-2"> Саламан загас (1)   <span className="text-shargal px-5 mx-5">11800₮ <button type="button " class="btn-close mx-5" aria-label="Close"></button> </span>   </p>
+                        </div>
+                        <div className="lastButton my-2 py-2">
+                            <p className=" marginAvii">Нийт : 25800₮</p>
+                            <input className="col-md-7 borderShargal " type="button" value="Захиалах" name="" id="" />
+                        </div>
 
-
+                    </div>
                 </div>
             </div>
         </div>

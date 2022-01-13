@@ -68,10 +68,43 @@
     .gadna{
         border: 0;
     }
+   
     @media screen and (min-width: 768px){
     .gadna{
         border: #F17228 1px solid;
-        border-radius: 10px;
+       
+    }
+    .lastButton{
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       }
+       .marginAvii{
+           margin-left: 45%;
+       }
+    .ondorOghoos{
+        height: 65vh;
+    }
+    .borderShargal{
+        color: white;
+        border: 0;
+        background-color: #F17228;
     }
     }
+    @media screen and (min-width: 992px){
+        .gadna{
+            border: 0;
+        }
+        .lastButton{
+            display: flex;
+            flex-direction: column;
+           justify-content: end;
+           align-items: end;
+           }
+           .marginAvii{
+            margin-left: 0;
+        }
+    }
+
 }
