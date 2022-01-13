@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Buttons from "./Button";
 import "../css/addfood.css";
 
 const AddFood = () => {
