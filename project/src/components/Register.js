@@ -26,7 +26,7 @@ const Register = () => {
         </label>
       </div>
 
-      <Buttons class={"signupTabletView"} type={"Register"} />
+      <Buttons class={"signupTabletView"} type={"Бүртгүүлэх"} />
     </div>
   );
 };

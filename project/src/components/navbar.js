@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "../css/navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { NavLink } from "react-router-dom";
-
+import { NavLink, Switch } from "react-router-dom";
+import CartSidebar from "./CartSidebar";
 const HeaderMenu = () => {
   const [showMenu, setShowMenu] = useState(false);
   let menu;
@@ -122,8 +122,9 @@ const HeaderMenu = () => {
             <ul className="userBusket">
               <li className="userBusketList">
                 <div className="userBusketElement">
-                  <img src="/icons/busketicon.svg" />
-                  <a href="">Сагс</a>
+                  {/* <img src="/icons/busketicon.svg" /> */}
+                  {/* <a href="">Сагс</a> */}
+                  <CartSidebar />
                 </div>
               </li>
               <li className="userBusketList">
