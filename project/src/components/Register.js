@@ -8,6 +8,7 @@ const Register = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(
+      'Register request:',
       "Email:",
       e.target.email.value,
       "Password:",
