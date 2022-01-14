@@ -20,13 +20,15 @@ const AddressVertification = () => {
                             <p className="p-2 m-2 col-12 d-md-none text-shargal">Хаягын мэдээлэл</p>
                             <p className="d-none p-2 col-12 col-md-8 m-2 d-md-block align-items-start turshilt text-shargal"> Хаягаа оруулна уу</p>
                             <select name="" id="" className="col-12 col-md-8 m-2 p-2 inputStyle selectbox">
+                                <optgroup label="Дүүрэг сонгоно уу">
+                                    <option value="" > Хан-Уул Дүүрэг </option>
+                                    <option value="">Баянзүрэх Дүүрэг</option>
+                                    <option value="">СүхБаатар Дүүрэг</option>
+                                    <option value="">Сонгинохайрхан Дүүрэг</option>
+                                </optgroup>
 
-                                <option value="">Хан-Уул Дүүрэг </option>
-                                <option value="">Баянзүрэх Дүүрэг</option>
-                                <option value="">СүхБаатар Дүүрэг</option>
-                                <option value="">Сонгинохайрхан Дүүрэг</option>
                             </select>
-                            <select name="" placeholder="Хороо сонгоно уу" className="inputStyle col-md-8 col-12 p-2 m-2" id="">
+                            <select name="" placeholder="Хороо сонгоно уу11" className="inputStyle col-md-8 col-12 p-2 m-2" id="">
                                 <option value=""> Хороо сонгоно уу</option>
                                 <option value="">1-р Хороо</option>
                                 <option value="">2-р Хороо</option>
@@ -61,11 +63,11 @@ const AddressVertification = () => {
                     <p className="d-none d-md-block my-2 py-2 col-md-8 col-lg-7 col-xl-6 shargal11 ">Алхам 2 > Захиалага баталгаажуулах</p>
                     <div className="gadna my-4 d-flex flex-column  justify-content-between ondorOghoos   " >
                         <div className="align-items-center d-flex flex-column justify-content-center ">
-                            <p className="py-2 my-2"> Саламан загас (1)   <span className="text-shargal px-5 mx-5">11800₮ <button type="button " class="btn-close mx-5" aria-label="Close"></button> </span>   </p>
-                            <p className="py-2 my-2"> Саламан загас (1)   <span className="text-shargal px-5 mx-5">11800₮ <button type="button " class="btn-close mx-5" aria-label="Close"></button> </span>   </p>
+                            <p className="py-2 my-2 fw-bold "> Саламан загас (1)   <span className="text-shargal px-5 mx-5">11800₮ <button type="button " class="btn-close mx-5" aria-label="Close"></button> </span>   </p>
+                            <p className="py-2 my-2 fw-bold "> Саламан загас (1)   <span className="text-shargal px-5 mx-5">11800₮ <button type="button " class="btn-close mx-5" aria-label="Close"></button> </span>   </p>
                         </div>
                         <div className="lastButton my-2 py-2">
-                            <p className=" marginAvii">Нийт : 25800₮</p>
+                            <p className=" marginAvii fw-bold">Нийт : 25800₮</p>
                             <input className="col-md-7 borderShargal " type="button" value="Захиалах" name="" id="" />
                         </div>
 
