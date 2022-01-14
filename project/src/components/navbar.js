@@ -3,7 +3,6 @@ import "../css/navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { NavLink, Switch } from "react-router-dom";
-import CartSidebar from "./CartSidebar";
 const HeaderMenu = () => {
   const [showMenu, setShowMenu] = useState(false);
   let menu;
@@ -122,9 +121,8 @@ const HeaderMenu = () => {
             <ul className="userBusket">
               <li className="userBusketList">
                 <div className="userBusketElement">
-                  {/* <img src="/icons/busketicon.svg" /> */}
-                  {/* <a href="">Сагс</a> */}
-                  <CartSidebar />
+                  <img src="/icons/busketicon.svg" />
+                  <a href="">Сагс</a>
                 </div>
               </li>
               <li className="userBusketList">
