@@ -1,23 +1,36 @@
 import React from "react";
-import Breadcrumb from 'react-bootstrap/Breadcrumb'
+import "../css/search.css"
 
 class SearchForm extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            foods: [],
-            searchField: ""
-        }
+
+    handleSubmit = (e) => {
+        e.preventDefault();
+        let foodName = this.food.value;
+        let path = `search/${foodName}`;
+        this.props.history.push(path)
     }
-    onSearchChanged = event => {
-        this.setState({searchField: event.target.value})
-      }
 
     render() {
-        const filteredFoods =foods.filter(el => el.name.toLowerCase().includes(searchField))
-        return(
-            <Cards foods={filteredFoods}/>
+        return (
+            <div className="search">
+                <div className="search_submit">
+                    <input type="text" class="inputMobile" aria-label="search" placeholder="Хайх" />
+                    <button className="search_button" aria-label="submit search"><img src="/icons/search.svg" /></button>
+                </div>
+                <div className="search_input">
+                    <input
+                        className="inputWeb"
+                        type="text"
+                        placeholder="Хайх"
+                    />
+                </div>
+            </div>
+
         )
+
+
+
+
     }
 }
 
