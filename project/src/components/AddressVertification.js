@@ -20,7 +20,7 @@ const AddressVertification = () => {
 
                             <select name="" id="" className="col-12 m-2 p-2 inputStyle selectbox">
 
-                                <option value="">Хан-Уул Дүүрэг </option>
+                                <option value=""><span><img src={navlogo} alt="" className="uuu" /></span> Хан-Уул Дүүрэг </option>
                                 <option value="">Баянзүрэх Дүүрэг</option>
                                 <option value="">СүхБаатар Дүүрэг</option>
                                 <option value="">Сонгинохайрхан Дүүрэг</option>
@@ -41,8 +41,8 @@ const AddressVertification = () => {
                             <input type="text" className="col-12 p-2 m-2 inputStyle" placeholder="Утасны дугаар оруулна уу." />
                             <p className="p-2 m-2 text-shargal">Төлбөр төлөх</p>
                             <p className="col-12 p-2 m-2 d-flex justify-content-start">
-                                <span className="col-6"> <input className="checkbox" type="checkbox" name="check" onclick={onlyOne(this)} />Бэлнээр</span>
-                                <span className="col-6"><input className="checkbox" type="checkbox" name="check" onclick={onlyOne(this)}/> Картаар</span>
+                                <span className="col-6"> <input className="checkbox me-2" type="checkbox" name="check" onclick={onlyOne(this)} />Бэлнээр</span>
+                                <span className="col-6"> <input className="checkbox me-2" type="checkbox" name="check" onclick={onlyOne(this)}/> Картаар</span>
 
                             </p>
                             <img src={navlogo} alt="" className="uuu" />
