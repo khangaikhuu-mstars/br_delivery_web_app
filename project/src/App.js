@@ -18,6 +18,7 @@ import Privacy from "./components/Privacy";
 import UserProfile from "./components/UserProfile";
 import ForgetPassword from "./components/ForgetPassword";
 import NewPassword from "./components/NewPassword";
+import AddressVertification from "./components/AddressVertification";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
         <Route path="/userProfile" component={UserProfile} />
         <Route path="/forget" component={ForgetPassword} />
         <Route path="/newpassword" component={NewPassword} />
+        <Route path="/address" component={AddressVertification} />
         <Route component={NotFound} />
       </Switch>
       <Footer />
