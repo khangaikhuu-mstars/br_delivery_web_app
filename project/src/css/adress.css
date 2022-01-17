@@ -1,6 +1,9 @@
 .padd{
     padding-left: 40px !important;
 }
+.changeCss:focus{
+    outline: none;
+}
 @media screen and (min-width: 320px){
     .shargal11{
         background-color: #F17228;
