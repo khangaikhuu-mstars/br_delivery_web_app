@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "../css/addfood.css";
 
 const AddFood = () => {
   const [count, setCount] = useState(1);
