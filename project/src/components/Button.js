@@ -3,8 +3,8 @@ import { Button } from "react-bootstrap";
 import "../css/button.css";
 const Buttons = (props) => {
   return (
-    <Button className={props.class} type={props.type}>
-      {props.name}
+    <Button type={props.type} className={props.class}>
+      {props.value}
     </Button>
   );
 };

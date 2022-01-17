@@ -10,7 +10,7 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(
-      'Login request:',
+      "Login request:",
       "Email:",
       e.target.email.value,
       "Password:",
