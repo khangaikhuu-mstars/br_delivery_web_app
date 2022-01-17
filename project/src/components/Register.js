@@ -7,8 +7,13 @@ import { Form } from "react-bootstrap";
 const Register = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    e.target.password.value !== e.target.passwordRepeat.value
+      ? alert("Passwords don't match")
+      : alert("Passowrds match ! Sending to backend");
+
     console.log(
-      'Register request:',
+      "Register request:",
       "Email:",
       e.target.email.value,
       "Password:",
@@ -25,9 +30,13 @@ const Register = () => {
     >
       <p className="hmm fw-bold">Бүртгүүлэх</p>
 
-      <TextInput id={'email'} type={"email"} name={"И-мэйл"} />
-      <TextInput id={'password'} type={"password"} name={"Нууц үг"} />
-      <TextInput id={'passwordRepeat'} type={"password"} name={"Нууц үг давтах"} />
+      <TextInput id={"email"} type={"email"} name={"И-мэйл"} />
+      <TextInput id={"password"} type={"password"} name={"Нууц үг"} />
+      <TextInput
+        id={"passwordRepeat"}
+        type={"password"}
+        name={"Нууц үг давтах"}
+      />
 
       <div className="agreeTo d-flex justify-content-between">
         <input
