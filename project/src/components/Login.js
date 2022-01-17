@@ -2,7 +2,7 @@
 import React from "react";
 import Buttons from "./Button.js";
 import TextInput from "./TextInput.js";
-import { useHistory } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "../css/login.css";
 
@@ -22,12 +22,15 @@ const Login = () => {
 
       <TextInput type={"email"} name={"И-мэйл"} />
       <TextInput type={"password"} name={"Нууц үг"} />
-
+      <NavLink className="forgotPass mb-4" to='/forget'>
       <a className="forgotPass mb-4" href="#">
         Нууц үгээ мартсан уу.
       </a>
-
-      <Buttons class={"loginTabletView"} type={"нэвтрэх"} />
+      </NavLink>
+     
+      {/* <p></p> */}
+      <Buttons class={"loginTabletView"} type={"Login"} />
+      {/* <p></p> */}
       <p className="underline">эсвэл</p>
 
       <Link to={'/register'} className="registerButton">

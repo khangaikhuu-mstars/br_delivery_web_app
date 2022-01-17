@@ -15,6 +15,8 @@ import NotFound from "./components/NotFound";
 import PageInsideMenu from "./components/PageInsideMenu";
 import TermOfUse from "./components/TermOfUse"
 import Privacy from './components/Privacy'
+import ForgetPassword from './components/ForgetPassword'
+import NewPassword from "./components/NewPassword";
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
         <Route path="/login" component={Login} />
         <Route path="/register" component={Register} /> 
         <Route path="/pageInsideMenu" component={PageInsideMenu} />
+        <Route path="/forget" component={ForgetPassword}/>
+        <Route path="/newpassword" component={NewPassword}/>
         <Route component={NotFound}/>
       </Switch>
       <Footer />
