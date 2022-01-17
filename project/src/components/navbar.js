@@ -3,7 +3,7 @@ import "../css/navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { NavLink, Switch } from "react-router-dom";
-import CartSidebar from "./CartSidebar";
+import SearchForm from "./SearchForm";
 const HeaderMenu = () => {
   const [showMenu, setShowMenu] = useState(false);
   let menu;
@@ -112,19 +112,13 @@ const HeaderMenu = () => {
             </li>
           </ul>
           <div className="icons">
-            <input
-              className="searchBox"
-              type="text"
-              placeholder="&#128269; Хайх"
-            />
-            <img className="searchIcon" src="/icons/searchicon.svg" />
+            <SearchForm />
             <img className="mobileUser" src="/icons/mobileuser.svg" />
             <ul className="userBusket">
               <li className="userBusketList">
                 <div className="userBusketElement">
-                  {/* <img src="/icons/busketicon.svg" /> */}
-                  {/* <a href="">Сагс</a> */}
-                  <CartSidebar />
+                  <img src="/icons/busketicon.svg" />
+                  <a href="">Сагс</a>
                 </div>
               </li>
               <li className="userBusketList">

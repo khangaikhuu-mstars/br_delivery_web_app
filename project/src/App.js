@@ -37,8 +37,12 @@ function App() {
         <Route path="/forget" component={ForgetPassword}/>
         <Route path="/newpassword" component={NewPassword}/>
         <Route component={NotFound}/>
+
+
       </Switch>
       <Footer />
+
+
     </BrowserRouter>
   );
 }
