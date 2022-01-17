@@ -129,6 +129,14 @@ const HeaderMenu = () => {
                   </div>
                 </NavLink>
               </li>
+              <li className="userBusketList">
+                <NavLink to="/userProfile">
+                  <div className="userBusketElement">
+                    <img src="/icons/usericon.svg" />
+                    <a href="">Хэрэглэгч</a>
+                  </div>
+                </NavLink>
+              </li>
             </ul>
           </div>
         </div>
