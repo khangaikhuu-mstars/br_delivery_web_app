@@ -15,11 +15,11 @@
     background-color: #F17228 !important;
 }
 
-.nevtrehTabletView{
+.nevtrehTabletView {
     top: 35%;
 }
 
-.loginTabletView{
+.loginTabletView {
     top: 35%;
 }
 
@@ -50,3 +50,4 @@
     border-radius: 0;
     width: 443px;
 }
+

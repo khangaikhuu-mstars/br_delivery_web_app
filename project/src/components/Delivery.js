@@ -3,7 +3,7 @@ import { useState } from 'react';
 import googlemaps from '../img/maps.jpeg'
 import '../css/delivery.css';
 
-
+//conflict tei holbootoi aldaa zasahiin tuld end xomment bichij bn
 const Delivery = () => {
     const [house, setData] = useState([])
 
