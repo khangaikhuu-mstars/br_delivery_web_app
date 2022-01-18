@@ -5,7 +5,7 @@ import { useState } from "react";
 
 
 const AddressVertification = () => {
-    
+
     const [state, setstate] = useState(0)
     const togleShow = (event) => {
         setstate(event.target.value)
@@ -13,7 +13,7 @@ const AddressVertification = () => {
 
     const [state1, setstate1] = useState(0)
     const togleShow1 = (event) => {
-         let test = event.target.value;
+        let test = event.target.value;
         setstate1(test)
     }
     const [state2, setstate2] = useState(0)
