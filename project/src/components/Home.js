@@ -11,8 +11,7 @@ function Home() {
         <div>
             <Slider />
             <InfoPanel />
-            <CategoryLabel/>
-            <AddressVertification/>
+            <CategoryLabel />
         </div>
     );
 
