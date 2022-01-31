@@ -15,12 +15,9 @@ import NotFound from "./components/NotFound";
 import PageInsideMenu from "./components/PageInsideMenu";
 import TermOfUse from "./components/TermOfUse"
 import Privacy from './components/Privacy'
-<<<<<<< HEAD
-import UserProfile from "./components/UserProfile";
-=======
 import ForgetPassword from './components/ForgetPassword'
+import UserProfile from "./components/UserProfile"
 import NewPassword from "./components/NewPassword";
->>>>>>> 9ce1e325eee706718c32a974f49ac9b32857c0f6
 
 function App() {
   return (
