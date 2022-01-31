@@ -2,7 +2,7 @@
 import React from "react";
 import Buttons from "./Button.js";
 import TextInput from "./TextInput.js";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "../css/login.css";
 import { Form } from "react-bootstrap";
 
@@ -27,10 +27,14 @@ const Login = () => {
 
       <TextInput id="email" type={"email"} name={"И-мэйл"} />
       <TextInput id="password" type={"password"} name={"Нууц үг"} />
-
-      <a className="forgotPass mb-4" href="#">
+      <NavLink className="forgotPass mb-4 faceItems" to="/forget">
+      <a className="forgotPass mb-4 " href="#" >
         Нууц үгээ мартсан уу.
       </a>
+      </NavLink>
+    
+       
+      
 
       <Buttons class={"loginTabletView"} type={"submit"} name={"login"} />
 
