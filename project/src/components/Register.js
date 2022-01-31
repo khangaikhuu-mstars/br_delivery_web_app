@@ -1,42 +1,34 @@
 import Buttons from "./Button.js";
-import React from "react";
+import React, { useState } from "react";
 import TextInput from "./TextInput.js";
 import "../css/login.css";
 import { Form } from "react-bootstrap";
+import { userService } from "../services/userService";
 
 const Register = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    e.target.password.value !== e.target.passwordRepeat.value
-      ? alert("Passwords don't match")
-      : alert("Passowrds match ! Sending to backend");
-
-    console.log(
-      "Register request:",
-      "Email:",
-      e.target.email.value,
-      "Password:",
-      e.target.password.value,
-      "Repeat:",
-      e.target.password.value === e.target.passwordRepeat.value
-    );
-  };
-
+  const submitHandler = (event) => {
+    event.preventDefault();
+    userService
+      .registerUser({
+        email: event.target.email.value,
+        password: event.target.password.value,
+        name: "lorem",
+        address: "lorem5"
+      })
+      .then((res) => {
+        res.json()
+      }).then(res => {
+        console.log(res)
+      })
+  }
   return (
-    <Form
-      onSubmit={handleSubmit}
-      className="field-contianer d-flex flex-column mt-5 mb-5 align-items-center justify-content-center"
-    >
+    <Form onSubmit={submitHandler} className="field-contianer d-flex flex-column mt-5 mb-5 align-items-center justify-content-center">
+
       <p className="hmm fw-bold">Бүртгүүлэх</p>
 
-      <TextInput id={"email"} type={"email"} name={"И-мэйл"} />
-      <TextInput id={"password"} type={"password"} name={"Нууц үг"} />
-      <TextInput
-        id={"passwordRepeat"}
-        type={"password"}
-        name={"Нууц үг давтах"}
-      />
+      <TextInput type={"email"} name={"И-мэйл"} value="" />
+      <TextInput type={"password"} name={"Нууц үг"} value="" />
+      <TextInput type={"passwordRepeat"} name={"Нууц үг давтах"} value="" />
 
       <div className="agreeTo d-flex justify-content-between">
         <input
@@ -46,11 +38,11 @@ const Register = () => {
           id="flexCheckDefault"
         />
         <label class="form-check-label" for="flexCheckDefault">
-          <a className="mb-4">Үйлчилгээний нөхцөл зөвшөөрөх</a>
+          <a className="mb-4 text-decoration-none ">Үйлчилгээний нөхцөл зөвшөөрөх</a>
         </label>
       </div>
 
-      <Buttons class={"signupTabletView"} type={"submit"} name={"Бүртгүүлэх"} />
+      <Buttons class={"signupTabletView"} name={"Бүртгүүлэх"} type={"Submit"} />
     </Form>
   );
 };

@@ -1,8 +1,9 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import Card from "./Card";
-import { Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+
 
 function Salad() {
   const [mainMenu, setMainMenu] = useState([]);

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Col, Modal } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 import '../css/card.css'
 import TestModal from './ExampleModal'
 
@@ -34,7 +34,6 @@ const Card = (props) => {
             </div>
         </div>
     )
-
     return (
         <>
 
