@@ -27,10 +27,9 @@ const Login = () => {
         Нууц үгээ мартсан уу.
       </a>
       </NavLink>
-     
-      {/* <p></p> */}
-      <Buttons class={"loginTabletView"} type={"Login"} />
-      {/* <p></p> */}
+  
+      <Buttons class={"loginTabletView"} type={"submit"} name={"login"} />
+
       <p className="underline">эсвэл</p>
 
       <Link to={'/register'} className="registerButton">
