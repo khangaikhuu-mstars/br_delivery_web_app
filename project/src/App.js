@@ -13,12 +13,20 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 import NotFound from "./components/NotFound";
 import PageInsideMenu from "./components/PageInsideMenu";
+
+import TermOfUse from "./components/TermOfUse"
+import Privacy from './components/Privacy'
+import ForgetPassword from './components/ForgetPassword'
+import UserProfile from "./components/UserProfile"
+import NewPassword from "./components/NewPassword";
+
 import TermOfUse from "./components/TermOfUse";
 import Privacy from "./components/Privacy";
 import UserProfile from "./components/UserProfile";
 import ForgetPassword from "./components/ForgetPassword";
 import NewPassword from "./components/NewPassword";
 import AddressVertification from "./components/AddressVertification";
+
 
 function App() {
   return (

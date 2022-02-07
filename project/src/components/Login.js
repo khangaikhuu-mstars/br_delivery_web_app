@@ -32,10 +32,7 @@ const Login = () => {
         Нууц үгээ мартсан уу.
       </a>
       </NavLink>
-    
-       
-      
-
+  
       <Buttons class={"loginTabletView"} type={"submit"} name={"login"} />
 
       <p className="underline">эсвэл</p>
