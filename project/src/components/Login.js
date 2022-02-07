@@ -2,53 +2,46 @@
 import React from "react";
 import Buttons from "./Button.js";
 import TextInput from "./TextInput.js";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../css/login.css";
-import { Form } from "react-bootstrap";
 
 const Login = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(
-      "Login request:",
-      "Email:",
-      e.target.email.value,
-      "Password:",
-      e.target.password.value
-    );
-  };
+
+
+  // const history = useHistory();
+  // const routeChange = () => {
+  //   let path = "/register";
+  //   history.push(path);
+  // };
+
 
   return (
-    <Form
-      onSubmit={handleSubmit}
-      className="field-contianer d-flex flex-column mt-5 mb-5 align-items-center justify-content-center"
-    >
+    <div className="field-contianer d-flex flex-column mt-5 mb-5 align-items-center justify-content-center">
       <p className="col-6 hmm fw-bold ms-2 ">нэвтрэх</p>
 
-      <TextInput id="email" type={"email"} name={"И-мэйл"} />
-      <TextInput id="password" type={"password"} name={"Нууц үг"} />
-      <NavLink className="forgotPass mb-4 faceItems" to="/forget">
-      <a className="forgotPass mb-4 " href="#" >
+      <TextInput type={"email"} name={"И-мэйл"} />
+      <TextInput type={"password"} name={"Нууц үг"} />
+      <NavLink className="forgotPass mb-4" to='/forget'>
+      <a className="forgotPass mb-4" href="#">
         Нууц үгээ мартсан уу.
       </a>
       </NavLink>
-    
-       
-      
-
-      <Buttons class={"loginTabletView"} type={"submit"} name={"login"} />
-
+     
+      {/* <p></p> */}
+      <Buttons class={"loginTabletView"} type={"Login"} />
+      {/* <p></p> */}
       <p className="underline">эсвэл</p>
 
-      <Link to={"/register"} className="registerButton">
+      <Link to={'/register'} className="registerButton">
         <Buttons
           className="registerButton"
           class={"loginTabletView"}
-          type="submit"
-          name={"register"}
+          type={"Бүртгүүлэх"}
+        // onClick={() => routeChange()}
         />
       </Link>
-    </Form>
+    </div>
   );
 };
 

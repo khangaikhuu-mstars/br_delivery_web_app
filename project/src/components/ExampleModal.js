@@ -26,6 +26,7 @@ function TestModal(props) {
                                 <h5 className='modalHeader'>Орц</h5>
                                 <p className='modalIngredients'>{props.data.ingredients}</p>
                             </div>
+
                             <AddFood />
                         </div>
                     </div>

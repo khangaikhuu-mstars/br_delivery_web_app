@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import "../css/navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
-import { NavLink } from "react-router-dom";
-import { Dropdown } from "react-bootstrap";
-import SearchForm from "./SearchForm";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { NavLink, Switch } from "react-router-dom";
+import CartSidebar from "./CartSidebar";
 const HeaderMenu = () => {
   const [showMenu, setShowMenu] = useState(false);
   let menu;
@@ -77,7 +76,7 @@ const HeaderMenu = () => {
         <div className="headerMenu">
           <FontAwesomeIcon
             className="toggleButton"
-            icon={showMenu ? faChevronLeft : faBars}
+            icon={faBars}
             onClick={() => {
               setShowMenu(!showMenu);
             }}
@@ -113,13 +112,19 @@ const HeaderMenu = () => {
             </li>
           </ul>
           <div className="icons">
-            <SearchForm />
+            <input
+              className="searchBox"
+              type="text"
+              placeholder="&#128269; Хайх"
+            />
+            <img className="searchIcon" src="/icons/searchicon.svg" />
             <img className="mobileUser" src="/icons/mobileuser.svg" />
             <ul className="userBusket">
               <li className="userBusketList">
                 <div className="userBusketElement">
-                  <img src="/icons/busketicon.svg" />
-                  <a href="">Сагс</a>
+                  {/* <img src="/icons/busketicon.svg" /> */}
+                  {/* <a href="">Сагс</a> */}
+                  <CartSidebar />
                 </div>
               </li>
               <li className="userBusketList">
@@ -128,31 +133,6 @@ const HeaderMenu = () => {
                     <img src="/icons/usericon.svg" />
                     <a href="">Нэвтрэх</a>
                   </div>
-                </NavLink>
-              </li>
-              <li className="userBusketList">
-                <NavLink to="/userProfile">
-                  <Dropdown className="dDown">
-                    {" "}
-                    <Dropdown.Toggle className="dDown" id="dropdown-basic">
-                      {" "}
-                      Хэрэглэгч{" "}
-                    </Dropdown.Toggle>{" "}
-                    <Dropdown.Menu>
-                      {" "}
-                      <Dropdown.Item href="#http://localhost:3000/userProfile">
-                        Хэрэглэгчийн мэдээлэл
-                      </Dropdown.Item>{" "}
-                      <Dropdown.Item href="#/action-2">
-                        {" "}
-                        Миний захиалгууд{" "}
-                      </Dropdown.Item>{" "}
-                      <Dropdown.Item href="#/action-3">
-                        {" "}
-                        Гарах{" "}
-                      </Dropdown.Item>{" "}
-                    </Dropdown.Menu>{" "}
-                  </Dropdown>
                 </NavLink>
               </li>
             </ul>
