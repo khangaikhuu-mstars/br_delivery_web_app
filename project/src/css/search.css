@@ -1,0 +1,16 @@
+.haih {
+    display: flex;
+    align-items: center;
+}
+.searchInput {
+    background: rgba(255, 255, 255, 0.5);
+    height: 32px;
+    padding-left: 25px;
+    border: 1px solid #FBC5A6;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    background: url("../../public/icons/searchicon.svg");
+    background-position: 5px;
+    background-repeat: no-repeat;
+  }

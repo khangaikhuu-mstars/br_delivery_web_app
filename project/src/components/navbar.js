@@ -5,6 +5,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { NavLink, Switch } from "react-router-dom";
 import { Dropdown } from "react-bootstrap";
 import CartSidebar from "./CartSidebar";
+import SearchBar from "./SearchBar"
 const HeaderMenu = () => {
   const [showMenu, setShowMenu] = useState(false);
   let menu;
@@ -113,12 +114,13 @@ const HeaderMenu = () => {
             </li>
           </ul>
           <div className="icons">
-            <input
+            {/* <input
               className="searchBox"
               type="text"
               placeholder="&#128269; Хайх"
             />
-            <img className="searchIcon" src="/icons/searchicon.svg" />
+            <img className="searchIcon" src="/icons/searchicon.svg" /> */}
+            <SearchBar />
             <img className="mobileUser" src="/icons/mobileuser.svg" />
             <ul className="userBusket">
               <li className="userBusketList">
