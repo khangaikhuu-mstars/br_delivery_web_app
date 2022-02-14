@@ -3,10 +3,21 @@ import React from "react";
 import TextInput from "./TextInput.js";
 import "../css/login.css";
 import { Form } from "react-bootstrap";
+import { userService } from "../services/userService.js";
 
 const Register = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
+    userService
+    .registerUser({
+      email: e.target.elements.email.value ,
+      password: e.target.elements.password.value ,
+      name: "Tugsuu" ,
+      address: "Mongolia" ,
+    })
+    .then((res)=>{
+      res.json()
+    })
 
     e.target.password.value !== e.target.passwordRepeat.value
       ? alert("Passwords don't match")

@@ -20,11 +20,6 @@ import ForgetPassword from './components/ForgetPassword'
 import UserProfile from "./components/UserProfile"
 import NewPassword from "./components/NewPassword";
 
-import TermOfUse from "./components/TermOfUse";
-import Privacy from "./components/Privacy";
-import UserProfile from "./components/UserProfile";
-import ForgetPassword from "./components/ForgetPassword";
-import NewPassword from "./components/NewPassword";
 import AddressVertification from "./components/AddressVertification";
 
 
