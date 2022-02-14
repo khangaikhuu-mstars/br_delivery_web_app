@@ -1,7 +1,43 @@
 // import Buttons from "@restart/ui/esm/Button";
-import React from "react";
+import React , {useState} from "react";
 import Buttons from "./Button.js";
 import TextInput from "./TextInput.js";
+
+import { Link, NavLink , useHistory } from "react-router-dom";
+import "../css/login.css";
+import { Form } from "react-bootstrap";
+import { userService } from "../services/userService.js";
+import {useUser} from "../contexts/UserContext"
+
+const Login = () => {
+  const history = useHistory()
+  const [cred , setCred] =useState()
+  const [user , setUser] = useUser()
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    userService
+    .userLogin({
+      email: e.target.elements.email.value,
+      password: e.target.elements.password.value
+    })
+    .then((res)=>{
+      return res.json()
+    })
+    .then((data)=>{
+      if(data.success){
+        userService.userInfoStorage(data)
+        setUser({
+          userName: data.data.name,
+          email: data.data.email,
+          address: data.data.address,
+        })
+        history.push("/")
+      }else{
+        alert("falied to optain login")
+      }
+    })
+  };
+
 import { NavLink, useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "../css/login.css";
@@ -14,6 +50,7 @@ const Login = () => {
   //   let path = "/register";
   //   history.push(path);
   // };
+
 
 
   return (
