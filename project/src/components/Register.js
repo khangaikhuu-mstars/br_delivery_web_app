@@ -2,6 +2,7 @@ import Buttons from "./Button.js";
 import React from "react";
 import TextInput from "./TextInput.js";
 import "../css/login.css";
+
 import { Form } from "react-bootstrap";
 import { userService } from "../services/userService.js";
 
@@ -34,20 +35,19 @@ const Register = () => {
     );
   };
 
+
+
+const Register = () => {
+
   return (
-    <Form
-      onSubmit={handleSubmit}
-      className="field-contianer d-flex flex-column mt-5 mb-5 align-items-center justify-content-center"
-    >
+      
+      <div className="field-contianer d-flex flex-column mt-5 mb-5 align-items-center justify-content-center">
+      
       <p className="hmm fw-bold">Бүртгүүлэх</p>
 
-      <TextInput id={"email"} type={"email"} name={"И-мэйл"} />
-      <TextInput id={"password"} type={"password"} name={"Нууц үг"} />
-      <TextInput
-        id={"passwordRepeat"}
-        type={"password"}
-        name={"Нууц үг давтах"}
-      />
+      <TextInput type={"email"} name={"И-мэйл"} />
+      <TextInput type={"password"} name={"Нууц үг"} />
+      <TextInput type={"password"} name={"Нууц үг давтах"} />
 
       <div className="agreeTo d-flex justify-content-between">
         <input
@@ -61,8 +61,8 @@ const Register = () => {
         </label>
       </div>
 
-      <Buttons class={"signupTabletView"} type={"submit"} name={"Бүртгүүлэх"} />
-    </Form>
+      <Buttons class={"signupTabletView"} type={"Бүртгүүлэх"} />
+    </div>
   );
 };
 

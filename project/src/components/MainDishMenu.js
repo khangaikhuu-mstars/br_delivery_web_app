@@ -10,7 +10,8 @@ function MainDishMenu() {
       .then((response) => response.json())
       .then((data) => setMainMenu(data));
   }, []);
-
+  console.log('hello');
+  console.log(mainMenu);
   let menu = mainMenu.filter((j) => j.category === "үндсэн хоол");
   return (
     <Container>
