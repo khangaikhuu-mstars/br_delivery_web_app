@@ -5,7 +5,8 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { NavLink, Switch } from "react-router-dom";
 import { Dropdown } from "react-bootstrap";
 
-import SearchForm from "./SearchForm";
+// import SearchForm from "./SearchForm";
+
 import { useUser } from "../contexts/UserContext";
 
 import CartSidebar from "./CartSidebar";

@@ -17,13 +17,13 @@ import TermOfUse from "./components/TermOfUse"
 import Privacy from './components/Privacy'
 import ForgetPassword from './components/ForgetPassword'
 
-import UserProfile from "./components/UserProfile"
+// import UserProfile from "./components/UserProfile"
 import NewPassword from "./components/NewPassword";
 
-import AddressVertification from "./components/AddressVertification";
+// import AddressVertification from "./components/AddressVertification";
 
 
-import NewPassword from "./components/NewPassword";
+
 
 
 function App() {
